@@ -12,3 +12,6 @@ tables/
 # Python
 __pycache__/
 *.pyc
+
+GEMINI.md
+node_modules/

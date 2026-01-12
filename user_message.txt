@@ -1,0 +1,17 @@
+I've updated the script to read CSVs from the `tables` directory, and I see the CSV files are present there.
+
+However, to properly implement the data type conversions (numbers, booleans, dates) and ensure the JSON output matches your desired structure, I still critically need the data model specifications from your `GEMINI.md` file.
+
+Could you please provide the relevant sections from `GEMINI.md` that describe the data models for:
+- Teams
+- Fixtures
+- Players
+- Venues
+- Tournament_Stages
+- Player_Statistics
+- Team_Statistics
+- Goals
+- Cards
+- Tournament_Summary
+
+Once I have these details, I can complete the `convertCSVtoJSON.js` script to accurately convert your CSV data.

@@ -8,7 +8,7 @@ extraction.log
 
 # Data
 data/
-
+tables/
 # Python
 __pycache__/
 *.pyc

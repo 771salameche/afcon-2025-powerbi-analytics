@@ -8,7 +8,8 @@ import StageFilter from '../components/filters/StageFilter';
 import DateRangeFilter from '../components/filters/DateRangeFilter';
 import GoalsTrendChart from '../components/charts/GoalsTrendChart'; // Import GoalsTrendChart
 import RecentMatchesList from '../components/common/RecentMatchesList'; // Import RecentMatchesList
-// import TeamSelector from '../components/filters/TeamSelector'; // Removed as it's in Sidebar
+import StandingsTable from '../components/charts/StandingsTable'; // Import StandingsTable
+
 
 const TournamentOverview = () => {
   const { loading, error, stages } = useTournament();
@@ -21,7 +22,8 @@ const TournamentOverview = () => {
     totalAttendance,
     avgAttendance,
     filteredFixtures,
-    tournamentProgress
+    tournamentProgress,
+    groupStandings // Get groupStandings from useStatistics
   } = useStatistics();
 
   const currentStageName = useMemo(() => {
@@ -49,11 +51,6 @@ const TournamentOverview = () => {
 
   if (loading) return <Loader message="Calculating statistics..." />;
   if (error) return <div className="text-red-500 text-center p-4">Error: {error.message}</div>;
-
-  // The RecentMatchesList component will handle its own filtering and slicing
-  // const recentMatches = [...filteredFixtures]
-  //   .sort((a, b) => new Date(b.date) - new Date(a.date))
-  //   .slice(0, 5);
 
   return (
     <div className="space-y-6">
@@ -89,6 +86,12 @@ const TournamentOverview = () => {
       <div>
         <h2 className="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-4">Recent Matches</h2>
         <RecentMatchesList />
+      </div>
+
+      {/* Group Standings Section */}
+      <div>
+        <h2 className="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-4">Group Standings</h2>
+        <StandingsTable standings={groupStandings} />
       </div>
     </div>
   );

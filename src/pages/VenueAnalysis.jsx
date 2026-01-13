@@ -3,9 +3,11 @@ import { useTournament } from '../contexts/TournamentContext';
 import { useStatistics } from '../contexts/StatisticsContext';
 import { useFilters } from '../contexts/FilterContext';
 import Loader from '../components/common/Loader';
-import KPICard from '../components/common/KPICard';
+import BrandedKPICard from '../components/common/BrandedKPICard'; // Use BrandedKPICard
 import VenueFilter from '../components/filters/VenueFilter';
 import VenueBarChart from '../components/charts/VenueBarChart'; // Import VenueBarChart
+import HeroSection from '../components/layout/HeroSection'; // Import HeroSection
+// import ImageWithFallback from '../components/common/ImageWithFallback'; // Consider a generic image component
 
 const VenueAnalysis = () => {
   const { loading, error, venues, fixtures } = useTournament(); // Also get raw fixtures for highest attendance
@@ -49,7 +51,11 @@ const VenueAnalysis = () => {
 
   return (
     <div className="space-y-6">
-      <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-800 dark:text-gray-100 mb-6">Venue Analysis</h1>
+      <HeroSection
+        title="Venue Analysis"
+        subtitle="Explore statistics and insights for all tournament venues."
+        showMascot={true}
+      />
 
       <div className="bg-white dark:bg-gray-800 p-4 rounded-lg shadow-md mb-6">
         <VenueFilter />
@@ -73,27 +79,28 @@ const VenueAnalysis = () => {
 
           {/* Venue Statistics Cards */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
-            <KPICard title="Matches Hosted" value={venueStats.totalMatchesAtVenue} />
-            <KPICard title="Total Goals" value={venueStats.totalGoalsAtVenue} subtitle={`${venueStats.avgGoalsPerMatchAtVenue} avg/match`} />
-            <KPICard title="Average Attendance" value={venueStats.avgAttendancePerMatchAtVenue.toLocaleString()} />
-            <KPICard title="Capacity Utilization" value={`${venueStats.capacityUtilization}%`} trend={parseFloat(venueStats.capacityUtilization) > 70 ? 'up' : (parseFloat(venueStats.capacityUtilization) < 50 ? 'down' : 'neutral')} />
-            <KPICard
+            <BrandedKPICard title="Matches Hosted" value={venueStats.totalMatchesAtVenue} pattern={true} />
+            <BrandedKPICard title="Total Goals" value={venueStats.totalGoalsAtVenue} subtitle={`${venueStats.avgGoalsPerMatchAtVenue} avg/match`} pattern={true} />
+            <BrandedKPICard title="Average Attendance" value={venueStats.avgAttendancePerMatchAtVenue.toLocaleString()} pattern={true} />
+            <BrandedKPICard title="Capacity Utilization" value={`${venueStats.capacityUtilization}%`} trend={parseFloat(venueStats.capacityUtilization) > 70 ? 'up' : (parseFloat(venueStats.capacityUtilization) < 50 ? 'down' : 'neutral')} pattern={true} />
+            <BrandedKPICard
               title="Highest Attendance Match"
               value={venueStats.highestAttendanceMatch ? venueStats.highestAttendanceMatch.attendance.toLocaleString() : 'N/A'}
               subtitle={venueStats.highestAttendanceMatch ? `${venueStats.highestAttendanceMatch.home_team_name} vs ${venueStats.highestAttendanceMatch.away_team_name}` : 'N/A'}
+              pattern={true}
             />
           </div>
 
           {/* Morocco Map with Markers - Placeholder */}
           <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md h-96 flex items-center justify-center">
-            <h2 className="text-xl md:text-2xl font-bold text-gray-800 dark:text-gray-100 mb-4">Morocco Map with Venue Markers - Placeholder</h2>
+            <h2 className="text-xl md:text-2xl font-bold text-gray-500 dark:text-gray-400 font-body mb-4">Morocco Map with Venue Markers - Placeholder</h2>
           </div>
 
           {/* Charts - Placeholders */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
             <VenueBarChart />
             <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md h-96 flex items-center justify-center">
-              <h2 className="text-xl md:text-2xl font-bold text-gray-800 dark:text-gray-100 mb-4">Attendance Trend (Line Chart) - Placeholder</h2>
+              <h2 className="text-xl md:text-2xl font-bold text-gray-500 dark:text-gray-400 font-body mb-4">Attendance Trend (Line Chart) - Placeholder</h2>
             </div>
           </div>
         </div>

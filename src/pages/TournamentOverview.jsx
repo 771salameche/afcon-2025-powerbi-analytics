@@ -2,13 +2,14 @@ import React, { useMemo } from 'react';
 import { useTournament } from '../contexts/TournamentContext';
 import { useStatistics } from '../contexts/StatisticsContext';
 import { useFilters } from '../contexts/FilterContext'; // Import useFilters
-import KPICard from '../components/common/KPICard';
+import BrandedKPICard from '../components/common/BrandedKPICard'; // Use BrandedKPICard
 import Loader from '../components/common/Loader';
 import StageFilter from '../components/filters/StageFilter';
 import DateRangeFilter from '../components/filters/DateRangeFilter';
 import GoalsTrendChart from '../components/charts/GoalsTrendChart'; // Import GoalsTrendChart
 import RecentMatchesList from '../components/common/RecentMatchesList'; // Import RecentMatchesList
 import StandingsTable from '../components/charts/StandingsTable'; // Import StandingsTable
+import HeroSection from '../components/layout/HeroSection'; // Import HeroSection
 
 
 const TournamentOverview = () => {
@@ -54,9 +55,11 @@ const TournamentOverview = () => {
 
   return (
     <div className="space-y-6">
-      <div className="flex justify-between items-center">
-        <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-800 dark:text-gray-100">AFCON 2025 - Tournament Overview</h1>
-      </div>
+      <HeroSection
+        title="AFCON 2025 - Tournament Overview"
+        subtitle="Comprehensive statistics and insights from the tournament."
+        showMascot={true}
+      />
 
       {/* Filter Section */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -66,19 +69,19 @@ const TournamentOverview = () => {
 
       {/* KPI Section */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-        <KPICard title="Total Matches" value={totalMatches} subtitle={`${tournamentProgress.toFixed(1)}% completed`} />
-        <KPICard title="Completed Matches" value={completedMatches} />
-        <KPICard title="Total Goals" value={totalGoals} subtitle={`${avgGoalsPerMatch} avg/match`} />
-        <KPICard title="Avg. Goals / Match" value={avgGoalsPerMatch} />
-        <KPICard title="Total Attendance" value={totalAttendance.toLocaleString()} subtitle={`${avgAttendance.toLocaleString()} avg`} />
-        <KPICard title="Current Stage" value={currentStageName} />
+        <BrandedKPICard title="Total Matches" value={totalMatches} subtitle={`${tournamentProgress.toFixed(1)}% completed`} pattern={true} />
+        <BrandedKPICard title="Completed Matches" value={completedMatches} pattern={true} />
+        <BrandedKPICard title="Total Goals" value={totalGoals} subtitle={`${avgGoalsPerMatch} avg/match`} pattern={true} />
+        <BrandedKPICard title="Avg. Goals / Match" value={avgGoalsPerMatch} pattern={true} />
+        <BrandedKPICard title="Total Attendance" value={totalAttendance.toLocaleString()} subtitle={`${avgAttendance.toLocaleString()} avg`} pattern={true} />
+        <BrandedKPICard title="Current Stage" value={currentStageName} pattern={true} />
       </div>
 
       {/* Charts Section */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         <GoalsTrendChart fixtures={filteredFixtures} />
         <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md h-96 flex items-center justify-center">
-          <p className="text-gray-500">Fixtures by Venue (Map) - Placeholder</p>
+          <p className="text-gray-500 dark:text-gray-400 font-body">Fixtures by Venue (Map) - Placeholder</p>
         </div>
       </div>
 

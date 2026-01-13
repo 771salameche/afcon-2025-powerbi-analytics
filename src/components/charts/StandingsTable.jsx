@@ -1,4 +1,5 @@
 import React from 'react';
+import TeamLogo from '../common/TeamLogo'; // Import TeamLogo
 
 const StandingsTable = ({ standings }) => {
   if (!standings || Object.keys(standings).length === 0) {
@@ -36,13 +37,13 @@ const StandingsTable = ({ standings }) => {
                     key={team.team_id}
                     className={`${
                       index < 2
-                        ? 'bg-green-50 dark:bg-green-900 border-l-4 border-green-500'
+                        ? 'bg-secondary-gold bg-opacity-10 border-l-4 border-secondary-gold'
                         : 'hover:bg-gray-50 dark:hover:bg-gray-700'
                     }`}
                   >
                     <td className="px-3 py-4 whitespace-nowrap text-xs md:text-sm font-medium text-gray-900 dark:text-gray-100">{index + 1}</td>
                     <td className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-medium text-gray-900 dark:text-gray-100 flex items-center">
-                      {team.team_logo_url && <img src={team.team_logo_url} alt={team.team_name} className="w-5 h-5 md:w-6 md:h-6 mr-3" />}
+                      <TeamLogo teamName={team.team_name} size="sm" /> {/* Use TeamLogo */}
                       {team.team_name}
                     </td>
                     <td className="px-3 py-4 whitespace-nowrap text-xs md:text-sm text-gray-700 dark:text-gray-300 text-center">{team.played}</td>

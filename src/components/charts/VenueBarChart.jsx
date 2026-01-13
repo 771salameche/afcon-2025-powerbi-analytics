@@ -12,14 +12,15 @@ import {
 import { useTournament } from '../../contexts/TournamentContext';
 import { useStatistics } from '../../contexts/StatisticsContext';
 
-// Function to generate distinct colors
-const generateColors = (count) => {
-  const colors = [];
-  const hueStep = 360 / count;
-  for (let i = 0; i < count; i++) {
-    colors.push(`hsl(${i * hueStep}, 70%, 50%)`); // Using HSL for distinct colors
-  }
-  return colors;
+// Function to generate distinct colors using brand palette
+const getBrandColors = () => {
+  return [
+    'var(--color-primary-maroon)',
+    'var(--color-primary-teal)',
+    'var(--color-secondary-gold)',
+    'var(--color-secondary-red)',
+    'var(--color-secondary-dark-teal)',
+  ];
 };
 
 const VenueBarChart = () => {
@@ -55,7 +56,7 @@ const VenueBarChart = () => {
     return venueMatchCounts;
   }, [venues, filteredFixtures, loading]);
 
-  const colors = useMemo(() => generateColors(chartData.length), [chartData.length]);
+  const brandColors = useMemo(() => getBrandColors(), []);
 
   if (loading) return <div className="flex items-center justify-center h-full text-gray-500 dark:text-gray-400"><p className="text-sm md:text-base">Loading venue chart data...</p></div>;
   if (chartData.length === 0) {
@@ -80,27 +81,27 @@ const VenueBarChart = () => {
             bottom: 5,
           }}
         >
-          <CartesianGrid strokeDasharray="3 3" stroke="#e0e0e0" className="dark:stroke-gray-700" />
+          <CartesianGrid strokeDasharray="3 3" stroke="var(--color-gray-300)" />
           {isMobile ? (
-            <XAxis type="number" dataKey="matchesHosted" stroke="#888888" className="dark:stroke-gray-400" />
+            <XAxis type="number" dataKey="matchesHosted" stroke="var(--color-gray-600)" />
           ) : (
-            <XAxis type="category" dataKey="venueName" stroke="#888888" className="dark:stroke-gray-400" interval={0} angle={-30} textAnchor="end" height={60} />
+            <XAxis type="category" dataKey="venueName" stroke="var(--color-gray-600)" interval={0} angle={-30} textAnchor="end" height={60} />
           )}
           {isMobile ? (
-            <YAxis type="category" dataKey="venueName" stroke="#888888" className="dark:stroke-gray-400" width={100} />
+            <YAxis type="category" dataKey="venueName" stroke="var(--color-gray-600)" width={100} />
           ) : (
-            <YAxis type="number" dataKey="matchesHosted" stroke="#888888" className="dark:stroke-gray-400" />
+            <YAxis type="number" dataKey="matchesHosted" stroke="var(--color-gray-600)" />
           )}
           <Tooltip
             cursor={{ fill: 'rgba(0,0,0,0.1)' }}
-            contentStyle={{ backgroundColor: '#333', border: 'none', borderRadius: '5px' }}
-            labelStyle={{ color: '#fff' }}
-            itemStyle={{ color: '#fff' }}
+            contentStyle={{ backgroundColor: 'var(--color-gray-700)', border: 'none', borderRadius: '5px' }}
+            labelStyle={{ color: 'var(--color-secondary-white)' }}
+            itemStyle={{ color: 'var(--color-secondary-white)' }}
           />
           <Legend />
           <Bar dataKey="matchesHosted" name="Matches Hosted">
             {chartData.map((entry, index) => (
-              <Bar key={`bar-${entry.venueId}`} fill={colors[index % colors.length]} />
+              <Bar key={`bar-${entry.venueId}`} fill={brandColors[index % brandColors.length]} />
             ))}
           </Bar>
         </BarChart>

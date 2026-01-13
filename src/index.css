@@ -1,3 +1,65 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Font-face declarations for Dunbar Low */
+@font-face {
+  font-family: 'Dunbar Low';
+  src: url('/fonts/DunbarLow.woff2') format('woff2');
+  font-weight: normal; /* Assuming normal weight based on general instruction */
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Font-face declarations for Dunbar Text */
+@font-face {
+  font-family: 'Dunbar Text';
+  src: url('/fonts/DunbarText.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  /* Light mode colors */
+  --color-primary-maroon: #800000;
+  --color-primary-teal: #07A88F;
+  --color-secondary-white: #FFFFFF;
+  --color-secondary-red: #B2382D;
+  --color-secondary-dark-teal: #006051;
+  --color-secondary-gold: #FDB913;
+  --color-gray-800: #1f2937; /* Tailwind gray-800 */
+  --color-gray-200: #e5e7eb; /* Tailwind gray-200 */
+  --color-gray-600: #4b5563; /* Tailwind gray-600 */
+  --color-gray-300: #d1d5db; /* Tailwind gray-300 */
+  --color-gray-700: #374151; /* Tailwind gray-700 */
+}
+
+html.dark {
+  /* Dark mode colors */
+  --color-primary-maroon: #800000; /* Primary maroon remains the same */
+  --color-primary-teal: #07A88F;   /* Primary teal remains the same */
+  --color-secondary-white: #1f2937; /* Darker white for dark mode background */
+  --color-secondary-red: #B2382D;   /* Secondary red remains the same */
+  --color-secondary-dark-teal: #006051; /* Dark teal remains the same */
+  --color-secondary-gold: #FDB913; /* Gold remains the same */
+  --color-gray-800: #e5e7eb; /* Light gray for dark mode text */
+  --color-gray-200: #1f2937; /* Dark gray for dark mode background */
+  --color-gray-600: #d1d5db; /* Lighter gray for dark mode elements */
+  --color-gray-300: #4b5563; /* Darker gray for dark mode borders/elements */
+  --color-gray-700: #4b5563; /* Darker gray for dark mode borders/elements */
+}
+
+body {
+  @apply font-body text-gray-800 dark:text-gray-200 transition-colors duration-300;
+  background-color: var(--color-secondary-white); /* Apply background from CSS variable */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply font-title text-gray-900 dark:text-gray-100 transition-colors duration-300;
+}
+
+/* Ensure smooth theme transitions */
+html {
+  @apply transition-colors duration-300 ease-in-out;
+}

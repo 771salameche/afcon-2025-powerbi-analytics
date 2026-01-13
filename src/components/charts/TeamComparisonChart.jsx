@@ -95,23 +95,23 @@ const TeamComparisonChart = () => {
             left: 20,
           }}
         >
-          <CartesianGrid strokeDasharray="3 3" stroke="#e0e0e0" className="dark:stroke-gray-700" />
-          <XAxis type="number" dataKey="goalsFor" name="Goals For" stroke="#888888" className="dark:stroke-gray-400" />
-          <YAxis type="number" dataKey="goalsAgainst" name="Goals Against" stroke="#888888" className="dark:stroke-gray-400" />
+          <CartesianGrid strokeDasharray="3 3" stroke="var(--color-gray-300)" />
+          <XAxis type="number" dataKey="goalsFor" name="Goals For" stroke="var(--color-gray-600)" />
+          <YAxis type="number" dataKey="goalsAgainst" name="Goals Against" stroke="var(--color-gray-600)" />
           <Tooltip cursor={{ strokeDasharray: '3 3' }} content={<CustomTooltip />} />
           <Legend />
 
           {/* Quadrants */}
-          {avgGoalsFor > 0 && <ReferenceLine x={avgGoalsFor} stroke="#ccc" strokeDasharray="3 3" label={`Avg GF: ${avgGoalsFor.toFixed(1)}`} />}
-          {avgGoalsAgainst > 0 && <ReferenceLine y={avgGoalsAgainst} stroke="#ccc" strokeDasharray="3 3" label={{ value: `Avg GA: ${avgGoalsAgainst.toFixed(1)}`, position: 'insideTopLeft' }} />}
+          {avgGoalsFor > 0 && <ReferenceLine x={avgGoalsFor} stroke="var(--color-primary-teal)" strokeDasharray="3 3" label={`Avg GF: ${avgGoalsFor.toFixed(1)}`} />}
+          {avgGoalsAgainst > 0 && <ReferenceLine y={avgGoalsAgainst} stroke="var(--color-primary-teal)" strokeDasharray="3 3" label={{ value: `Avg GA: ${avgGoalsAgainst.toFixed(1)}`, position: 'insideTopLeft' }} />}
 
-          <Scatter name="Teams" data={chartData} fill="#8884d8">
+          <Scatter name="Teams" data={chartData} fill="var(--color-primary-teal)">
             {chartData.map((entry, index) => (
               <Scatter
                 key={`scatter-${entry.teamId}`}
                 data={[entry]}
-                fill={selectedTeams.includes(entry.teamId) ? '#ff7300' : '#8884d8'} // Highlight selected team
-                stroke={selectedTeams.includes(entry.teamId) ? '#ff7300' : 'none'}
+                fill={selectedTeams.includes(entry.teamId) ? 'var(--color-primary-maroon)' : 'var(--color-primary-teal)'} // Highlight selected team
+                stroke={selectedTeams.includes(entry.teamId) ? 'var(--color-primary-maroon)' : 'none'}
                 strokeWidth={2}
                 r={selectedTeams.includes(entry.teamId) ? 8 : 5}
               />

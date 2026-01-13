@@ -11,12 +11,12 @@ const VenueFilter = () => {
   }
 
   return (
-    <div className="p-4 bg-white rounded-lg shadow">
-      <h3 className="text-lg font-semibold mb-2">Filter by Venue</h3>
+    <div className="p-4 bg-white dark:bg-gray-800 rounded-lg shadow">
+      <h3 className="text-base md:text-lg font-semibold text-gray-700 dark:text-gray-200 mb-2">Filter by Venue</h3>
       <select
         value={selectedVenue || ''}
         onChange={(e) => setSelectedVenue(e.target.value === '' ? null : parseInt(e.target.value))}
-        className="block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+        className="block w-full px-3 py-2 bg-white dark:bg-gray-700 dark:text-gray-200 border border-primary-teal rounded-md shadow-sm focus:outline-none focus:ring-1 focus:ring-primary-teal sm:text-sm"
       >
         <option value="">All Venues</option>
         {venues.map((venue) => (

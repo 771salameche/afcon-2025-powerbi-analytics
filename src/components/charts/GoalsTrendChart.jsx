@@ -24,12 +24,7 @@ const GoalsTrendChart = ({ fixtures }) => {
     sortedFixtures.forEach((fixture) => {
       if (fixture.status === 'Match Finished') {
         cumulativeGoals += fixture.home_team_score + fixture.away_team_score;
-        // Use a consistent date format for grouping, or plot individual matches
-        // For a trend, often plotting points for each match day is sufficient
         const matchDate = new Date(fixture.date).toLocaleDateString('en-US', { day: 'numeric', month: 'short' });
-
-        // Aggregate goals per day to avoid multiple points on the same day if desired
-        // For simplicity, plotting each match as a point for a continuous trend
         data.push({
           date: matchDate,
           'Cumulative Goals': cumulativeGoals,
@@ -43,7 +38,7 @@ const GoalsTrendChart = ({ fixtures }) => {
   if (chartData.length === 0) {
     return (
       <div className="flex items-center justify-center h-full text-gray-500 dark:text-gray-400">
-        <p>Not enough data to display goals trend.</p>
+        <p className="text-sm md:text-base">Not enough data to display goals trend.</p>
       </div>
     );
   }
@@ -61,20 +56,20 @@ const GoalsTrendChart = ({ fixtures }) => {
             bottom: 5,
           }}
         >
-          <CartesianGrid strokeDasharray="3 3" stroke="#e0e0e0" className="dark:stroke-gray-700" />
-          <XAxis dataKey="date" stroke="#888888" className="dark:stroke-gray-400" />
-          <YAxis stroke="#888888" className="dark:stroke-gray-400" />
+          <CartesianGrid strokeDasharray="3 3" stroke="var(--color-gray-300)" />
+          <XAxis dataKey="date" stroke="var(--color-gray-600)" />
+          <YAxis stroke="var(--color-gray-600)" />
           <Tooltip
-            contentStyle={{ backgroundColor: '#333', border: 'none', borderRadius: '5px' }}
-            labelStyle={{ color: '#fff' }}
-            itemStyle={{ color: '#fff' }}
+            contentStyle={{ backgroundColor: 'var(--color-gray-700)', border: 'none', borderRadius: '5px' }}
+            labelStyle={{ color: 'var(--color-secondary-white)' }}
+            itemStyle={{ color: 'var(--color-secondary-white)' }}
           />
           <Legend />
           <Line
             type="monotone"
             dataKey="Cumulative Goals"
-            stroke="#8884d8"
-            activeDot={{ r: 8 }}
+            stroke="var(--color-primary-maroon)"
+            activeDot={{ r: 8, fill: 'var(--color-primary-maroon)', stroke: 'var(--color-primary-teal)' }}
             strokeWidth={2}
           />
         </LineChart>

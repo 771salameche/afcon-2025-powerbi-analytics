@@ -1,7 +1,7 @@
 import React from 'react';
 import { PatternBackground } from '../../utils/patternHelpers.jsx'; // Import PatternBackground
 
-const BrandedKPICard = ({ title, value, icon, trend, subtitle, pattern = 'pattern-03.png' }) => {
+const BrandedKPICard = ({ title, value, icon, trend, subtitle, pattern = 'pattern-03.png', valueClassName = '' }) => {
   const getTrendColor = (trend) => {
     switch (trend) {
       case 'up':
@@ -37,7 +37,7 @@ const BrandedKPICard = ({ title, value, icon, trend, subtitle, pattern = 'patter
           {icon && <div className="text-gray-400 dark:text-gray-500 text-2xl">{icon}</div>}
         </div>
         <div className="flex items-baseline mb-2">
-          <p className="text-3xl md:text-4xl font-bold text-primary-maroon mr-2">{value}</p>
+          <p className={`text-3xl md:text-4xl font-bold mr-2 ${valueClassName}`}>{value}</p>
           {trend && (
             <span className={`text-xs md:text-sm font-medium ${getTrendColor(trend)} flex items-center`}>
               {getTrendIcon(trend)}

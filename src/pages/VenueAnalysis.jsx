@@ -8,7 +8,11 @@ import VenueFilter from '../components/filters/VenueFilter';
 import VenueBarChart from '../components/charts/VenueBarChart'; // Import VenueBarChart
 import HeroSection from '../components/layout/HeroSection'; // Import HeroSection
 import { PatternBackground, getRandomPattern } from '../utils/patternHelpers.jsx'; // Import PatternBackground and getRandomPattern
-// import ImageWithFallback from '../components/common/ImageWithFallback'; // Consider a generic image component
+
+// Import Skeleton Components
+import KPICardSkeleton from '../components/skeletons/KPICardSkeleton';
+import ChartSkeleton from '../components/skeletons/ChartSkeleton';
+
 
 const VenueAnalysis = () => {
   const { loading, error, venues, fixtures } = useTournament(); // Also get raw fixtures for highest attendance
@@ -81,32 +85,51 @@ const VenueAnalysis = () => {
 
           {/* Venue Statistics Cards */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
-            <BrandedKPICard title="Matches Hosted" value={venueStats.totalMatchesAtVenue} pattern={getRandomPattern()} icon={<img src="/logos/png-ball.png" alt="Ball" className="w-6 h-6 object-contain" />} />
-            <BrandedKPICard title="Total Goals" value={venueStats.totalGoalsAtVenue} subtitle={`${venueStats.avgGoalsPerMatchAtVenue} avg/match`} pattern={getRandomPattern()} icon={<img src="/logos/coupe.svg" alt="Trophy" className="w-6 h-6 object-contain" />} />
-            <BrandedKPICard title="Average Attendance" value={venueStats.avgAttendancePerMatchAtVenue.toLocaleString()} pattern={getRandomPattern()} />
-            <BrandedKPICard title="Capacity Utilization" value={`${venueStats.capacityUtilization}%`} trend={parseFloat(venueStats.capacityUtilization) > 70 ? 'up' : (parseFloat(venueStats.capacityUtilization) < 50 ? 'down' : 'neutral')} pattern={getRandomPattern()} />
-            <BrandedKPICard
-              title="Highest Attendance Match"
-              value={venueStats.highestAttendanceMatch ? venueStats.highestAttendanceMatch.attendance.toLocaleString() : 'N/A'}
-              subtitle={venueStats.highestAttendanceMatch ? `${venueStats.highestAttendanceMatch.home_team_name} vs ${venueStats.highestAttendanceMatch.away_team_name}` : 'N/A'}
-              pattern={getRandomPattern()}
-            />
+            {loading ? (
+              Array.from({ length: 5 }).map((_, i) => <KPICardSkeleton key={i} />)
+            ) : (
+              <>
+                <BrandedKPICard title="Matches Hosted" value={venueStats.totalMatchesAtVenue} pattern={getRandomPattern()} icon={<img src="/logos/png-ball.png" alt="Ball" className="w-6 h-6 object-contain" />} />
+                <BrandedKPICard title="Total Goals" value={venueStats.totalGoalsAtVenue} subtitle={`${venueStats.avgGoalsPerMatchAtVenue} avg/match`} pattern={getRandomPattern()} icon={<img src="/logos/coupe.svg" alt="Trophy" className="w-6 h-6 object-contain" />} />
+                <BrandedKPICard title="Average Attendance" value={venueStats.avgAttendancePerMatchAtVenue.toLocaleString()} pattern={getRandomPattern()} />
+                <BrandedKPICard title="Capacity Utilization" value={`${venueStats.capacityUtilization}%`} trend={parseFloat(venueStats.capacityUtilization) > 70 ? 'up' : (parseFloat(venueStats.capacityUtilization) < 50 ? 'down' : 'neutral')} pattern={getRandomPattern()} />
+                <BrandedKPICard
+                  title="Highest Attendance Match"
+                  value={venueStats.highestAttendanceMatch ? venueStats.highestAttendanceMatch.attendance.toLocaleString() : 'N/A'}
+                  subtitle={venueStats.highestAttendanceMatch ? `${venueStats.highestAttendanceMatch.home_team_name} vs ${venueStats.highestAttendanceMatch.away_team_name}` : 'N/A'}
+                  pattern={getRandomPattern()}
+                />
+              </>
+            )}
           </div>
 
           {/* Morocco Map with Markers */}
-          <PatternBackground pattern={getRandomPattern()} opacity={0.15} className="bg-primary-maroon p-6 rounded-lg shadow-md h-96 flex flex-col items-center justify-center">
-            <h2 className="text-xl md:text-2xl font-bold text-secondary-gold font-title mb-4">Morocco Map with Venue Markers - Placeholder</h2>
-            <img src="/logos/mascot.svg" alt="Mascot" className="h-24 w-auto opacity-70" />
-          </PatternBackground>
+          {loading ? (
+            <ChartSkeleton />
+          ) : (
+            <PatternBackground pattern={getRandomPattern()} opacity={0.15} className="bg-primary-maroon p-6 rounded-lg shadow-md h-96 flex flex-col items-center justify-center">
+              <h2 className="text-xl md:text-2xl font-bold text-secondary-gold font-title mb-4">Morocco Map with Venue Markers - Placeholder</h2>
+              <img src="/logos/mascot.svg" alt="Mascot" className="h-24 w-auto opacity-70" />
+            </PatternBackground>
+          )}
 
           {/* Charts - Placeholders */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-            <PatternBackground pattern={getRandomPattern()} opacity={0.05} className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md h-96 flex items-center justify-center relative">
-              <VenueBarChart />
-            </PatternBackground>
-            <PatternBackground pattern={getRandomPattern()} opacity={0.05} className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md h-96 flex items-center justify-center relative">
-              <h2 className="text-xl md:text-2xl font-bold text-gray-500 dark:text-gray-400 font-body mb-4">Attendance Trend (Line Chart) - Placeholder</h2>
-            </PatternBackground>
+            {loading ? (
+              <>
+                <ChartSkeleton />
+                <ChartSkeleton />
+              </>
+            ) : (
+              <>
+                <PatternBackground pattern={getRandomPattern()} opacity={0.05} className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md h-96 flex items-center justify-center relative">
+                  <VenueBarChart />
+                </PatternBackground>
+                <PatternBackground pattern={getRandomPattern()} opacity={0.05} className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md h-96 flex items-center justify-center relative">
+                  <h2 className="text-xl md:text-2xl font-bold text-gray-500 dark:text-gray-400 font-body mb-4">Attendance Trend (Line Chart) - Placeholder</h2>
+                </PatternBackground>
+              </>
+            )}
           </div>
         </div>
       )}

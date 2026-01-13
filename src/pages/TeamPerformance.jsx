@@ -11,6 +11,11 @@ import TeamLogo from '../components/common/TeamLogo'; // Import TeamLogo
 import HeroSection from '../components/layout/HeroSection'; // Import HeroSection
 import { getRandomPattern, PatternBackground } from '../utils/patternHelpers.jsx'; // Import both
 
+// Import Skeleton Components
+import KPICardSkeleton from '../components/skeletons/KPICardSkeleton';
+import MatchCardSkeleton from '../components/skeletons/MatchCardSkeleton';
+import ChartSkeleton from '../components/skeletons/ChartSkeleton';
+
 const TeamPerformance = () => {
   const { loading, error, teams, getTeamById, stages } = useTournament();
   const { selectedTeams, setSelectedTeams } = useFilters();
@@ -111,46 +116,68 @@ const TeamPerformance = () => {
 
           {/* Team Statistics Cards */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
-            <BrandedKPICard title="Record (W-D-L)" value={`${teamStats.wins}-${teamStats.draws}-${teamStats.losses}`} pattern={true} />
-            <BrandedKPICard title="Points" value={teamStats.points} trend={teamStats.points > 0 ? 'up' : 'neutral'} pattern={true} />
-            <BrandedKPICard title="Goals For" value={teamStats.goalsFor} trend={teamStats.goalsFor > teamStats.goalsAgainst ? 'up' : 'neutral'} pattern={true} icon={<img src="/logos/png-ball.png" alt="Ball" className="w-6 h-6 object-contain" />} />
-            <BrandedKPICard title="Goals Against" value={teamStats.goalsAgainst} trend={teamStats.goalsAgainst < teamStats.goalsFor ? 'down' : 'neutral'} pattern={true} />
-            <BrandedKPICard title="Goal Difference" value={teamStats.goalDifference} trend={teamStats.goalDifference > 0 ? 'up' : (teamStats.goalDifference < 0 ? 'down' : 'neutral')} pattern={true} />
-            <BrandedKPICard title="Win Rate" value={`${winRate.toFixed(1)}%`} trend={winRate > 50 ? 'up' : (winRate < 30 ? 'down' : 'neutral')} pattern={true} />
-            <BrandedKPICard title="Clean Sheets" value={cleanSheets} trend={cleanSheets > 0 ? 'up' : 'neutral'} pattern={true} icon={<img src="/logos/coupe.svg" alt="Trophy" className="w-6 h-6 object-contain" />} />
-            <BrandedKPICard title="Home Record (W-D-L)" value={`${homeRecord.wins}-${homeRecord.draws}-${homeRecord.losses}`} pattern={true} />
-            <BrandedKPICard title="Away Record (W-D-L)" value={`${awayRecord.wins}-${awayRecord.draws}-${awayRecord.losses}`} pattern={true} />
+            {loading ? (
+              Array.from({ length: 12 }).map((_, i) => <KPICardSkeleton key={i} />)
+            ) : (
+              <>
+                <BrandedKPICard title="Matches Played" value={teamStats.played} pattern={true} />
+                <BrandedKPICard title="Wins" value={teamStats.wins} valueClassName="text-secondary-gold" pattern={true} />
+                <BrandedKPICard title="Draws" value={teamStats.draws} valueClassName="text-primary-teal" pattern={true} />
+                <BrandedKPICard title="Losses" value={teamStats.losses} valueClassName="text-secondary-red" pattern={true} />
+                <BrandedKPICard title="Points" value={teamStats.points} trend={teamStats.points > 0 ? 'up' : 'neutral'} pattern={true} />
+                <BrandedKPICard title="Goals For" value={teamStats.goalsFor} trend={teamStats.goalsFor > teamStats.goalsAgainst ? 'up' : 'neutral'} pattern={true} icon={<img src="/logos/png-ball.png" alt="Ball" className="w-6 h-6 object-contain" />} />
+                <BrandedKPICard title="Goals Against" value={teamStats.goalsAgainst} trend={teamStats.goalsAgainst < teamStats.goalsFor ? 'down' : 'neutral'} pattern={true} />
+                <BrandedKPICard title="Goal Difference" value={teamStats.goalDifference} trend={teamStats.goalDifference > 0 ? 'up' : (teamStats.goalDifference < 0 ? 'down' : 'neutral')} pattern={true} />
+                <BrandedKPICard title="Win Rate" value={`${winRate.toFixed(1)}%`} trend={winRate > 50 ? 'up' : (winRate < 30 ? 'down' : 'neutral')} pattern={true} />
+                <BrandedKPICard title="Clean Sheets" value={cleanSheets} trend={cleanSheets > 0 ? 'up' : 'neutral'} pattern={true} icon={<img src="/logos/coupe.svg" alt="Trophy" className="w-6 h-6 object-contain" />} />
+                <BrandedKPICard title="Home Record (W-D-L)" value={`${homeRecord.wins}-${homeRecord.draws}-${homeRecord.losses}`} pattern={true} />
+                <BrandedKPICard title="Away Record (W-D-L)" value={`${awayRecord.wins}-${awayRecord.draws}-${awayRecord.losses}`} pattern={true} />
+              </>
+            )}
           </div>
 
           {/* Performance Charts - Placeholders */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-            <PatternBackground pattern={getRandomPattern()} opacity={0.05} className="p-6 rounded-lg shadow-md h-96 flex items-center justify-center relative">
-              <TeamLogo teamName={selectedTeam.team_name} size="xxl" className="absolute opacity-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" /> {/* Watermark */}
-              <p className="text-gray-500 dark:text-gray-400 font-body">Team Goal Distribution (Bar Chart) - Placeholder</p>
-            </PatternBackground>
-            <PatternBackground pattern={getRandomPattern()} opacity={0.05} className="p-6 rounded-lg shadow-md h-96 flex items-center justify-center relative">
-              <TeamLogo teamName={selectedTeam.team_name} size="xxl" className="absolute opacity-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" /> {/* Watermark */}
-              <p className="text-gray-500 dark:text-gray-400 font-body">Player Contributions (Table/Chart) - Placeholder</p>
-            </PatternBackground>
+            {loading ? (
+              <>
+                <ChartSkeleton />
+                <ChartSkeleton />
+              </>
+            ) : (
+              <>
+                <PatternBackground pattern={getRandomPattern()} opacity={0.05} className="p-6 rounded-lg shadow-md h-96 flex items-center justify-center relative">
+                  <TeamLogo teamName={selectedTeam.team_name} size="xxl" className="absolute opacity-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" /> {/* Watermark */}
+                  <TeamComparisonChart />
+                </PatternBackground>
+                <PatternBackground pattern={getRandomPattern()} opacity={0.05} className="p-6 rounded-lg shadow-md h-96 flex items-center justify-center relative">
+                  <TeamLogo teamName={selectedTeam.team_name} size="xxl" className="absolute opacity-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" /> {/* Watermark */}
+                  <p className="text-gray-500 dark:text-gray-400 font-body">Player Contributions (Table/Chart) - Placeholder</p>
+                </PatternBackground>
+              </>
+            )}
           </div>
 
           {/* Match History Timeline */}
           <div>
             <h2 className="text-xl md:text-2xl font-bold text-gray-800 dark:text-gray-100 mb-4">Match History</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-              {teamMatches.length > 0 ? (
-                teamMatches.map(match => (
-                  <MatchCard
-                    key={match.fixture_id}
-                    fixture={match}
-                    homeTeam={match.homeTeam}
-                    awayTeam={match.awayTeam}
-                  />
-                ))
+              {loading ? (
+                Array.from({ length: 6 }).map((_, i) => <MatchCardSkeleton key={i} />)
               ) : (
-                <div className="col-span-full bg-white dark:bg-gray-800 p-4 rounded-lg shadow-md flex items-center justify-center h-40">
-                  <p className="text-gray-500 dark:text-gray-400 font-body">No completed matches for this team in current filters.</p>
-                </div>
+                teamMatches.length > 0 ? (
+                  teamMatches.map(match => (
+                    <MatchCard
+                      key={match.fixture_id}
+                      fixture={match}
+                      homeTeam={match.homeTeam}
+                      awayTeam={match.awayTeam}
+                    />
+                  ))
+                ) : (
+                  <div className="col-span-full bg-white dark:bg-gray-800 p-4 rounded-lg shadow-md flex items-center justify-center h-40">
+                    <p className="text-gray-500 dark:text-gray-400 font-body">No completed matches for this team in current filters.</p>
+                  </div>
+                )
               )}
             </div>
           </div>

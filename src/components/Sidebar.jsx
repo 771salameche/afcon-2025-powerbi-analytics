@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import StageFilter from './filters/StageFilter';
 import TeamSelector from './filters/TeamSelector';
 import DateRangeFilter from './filters/DateRangeFilter';
+import VenueFilter from './filters/VenueFilter'; // Import VenueFilter
 
 const Sidebar = ({ isOpen, toggleSidebar }) => {
   return (
@@ -29,6 +30,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
             <StageFilter />
             <TeamSelector />
             <DateRangeFilter />
+            <VenueFilter /> {/* Add VenueFilter here */}
         </div>
       </aside>
     </>

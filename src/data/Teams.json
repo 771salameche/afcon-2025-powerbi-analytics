@@ -1,0 +1,170 @@
+[
+  {
+    "team_id": 1,
+    "team_name": "Morocco",
+    "group_name": "Group A",
+    "fifa_ranking": 11,
+    "coach_name": "Walid Regragui"
+  },
+  {
+    "team_id": 2,
+    "team_name": "Burkina Faso",
+    "group_name": "Group E",
+    "fifa_ranking": 62,
+    "coach_name": "Brama Traoré"
+  },
+  {
+    "team_id": 3,
+    "team_name": "Cameroon",
+    "group_name": "Group F",
+    "fifa_ranking": 57,
+    "coach_name": "David Pagou"
+  },
+  {
+    "team_id": 4,
+    "team_name": "Algeria",
+    "group_name": "Group E",
+    "fifa_ranking": 34,
+    "coach_name": "Vladimir Petković"
+  },
+  {
+    "team_id": 5,
+    "team_name": "DR Congo",
+    "group_name": "Group D",
+    "fifa_ranking": 56,
+    "coach_name": "Sébastien Desabre"
+  },
+  {
+    "team_id": 6,
+    "team_name": "Senegal",
+    "group_name": "Group D",
+    "fifa_ranking": 19,
+    "coach_name": "Pape Thiaw"
+  },
+  {
+    "team_id": 7,
+    "team_name": "Egypt",
+    "group_name": "Group B",
+    "fifa_ranking": 35,
+    "coach_name": "Hossam Hassan"
+  },
+  {
+    "team_id": 8,
+    "team_name": "Angola",
+    "group_name": "Group B",
+    "fifa_ranking": 89,
+    "coach_name": "Patrice Beaumelle"
+  },
+  {
+    "team_id": 9,
+    "team_name": "Equatorial Guinea",
+    "group_name": "Group E",
+    "fifa_ranking": 97,
+    "coach_name": "Juan Michá"
+  },
+  {
+    "team_id": 10,
+    "team_name": "Ivory Coast",
+    "group_name": "Group F",
+    "fifa_ranking": 42,
+    "coach_name": "Emerse Faé"
+  },
+  {
+    "team_id": 11,
+    "team_name": "Gabon",
+    "group_name": "Group F",
+    "fifa_ranking": 78,
+    "coach_name": "Thierry Mouyouma"
+  },
+  {
+    "team_id": 12,
+    "team_name": "Uganda",
+    "group_name": "Group C",
+    "fifa_ranking": 85,
+    "coach_name": "Paul Put"
+  },
+  {
+    "team_id": 13,
+    "team_name": "South Africa",
+    "group_name": "Group B",
+    "fifa_ranking": 61,
+    "coach_name": "Hugo Broos"
+  },
+  {
+    "team_id": 14,
+    "team_name": "Tunisia",
+    "group_name": "Group C",
+    "fifa_ranking": 41,
+    "coach_name": "Sami Trabelsi"
+  },
+  {
+    "team_id": 15,
+    "team_name": "Nigeria",
+    "group_name": "Group C",
+    "fifa_ranking": 38,
+    "coach_name": "Eric Chelle"
+  },
+  {
+    "team_id": 16,
+    "team_name": "Mali",
+    "group_name": "Group A",
+    "fifa_ranking": 53,
+    "coach_name": "Tom Saintfiet"
+  },
+  {
+    "team_id": 17,
+    "team_name": "Zambia",
+    "group_name": "Group A",
+    "fifa_ranking": 90,
+    "coach_name": "Moses Sichone"
+  },
+  {
+    "team_id": 18,
+    "team_name": "Zimbabwe",
+    "group_name": "Group B",
+    "fifa_ranking": 129,
+    "coach_name": "Mario Marinica"
+  },
+  {
+    "team_id": 19,
+    "team_name": "Comoros",
+    "group_name": "Group A",
+    "fifa_ranking": 108,
+    "coach_name": "Stefano Cusin"
+  },
+  {
+    "team_id": 20,
+    "team_name": "Sudan",
+    "group_name": "Group E",
+    "fifa_ranking": 118,
+    "coach_name": "James Kwesi Appiah"
+  },
+  {
+    "team_id": 21,
+    "team_name": "Benin",
+    "group_name": "Group D",
+    "fifa_ranking": 92,
+    "coach_name": "Gernot Rohr"
+  },
+  {
+    "team_id": 22,
+    "team_name": "Tanzania",
+    "group_name": "Group C",
+    "fifa_ranking": 112,
+    "coach_name": "Miguel Gamondi"
+  },
+  {
+    "team_id": 23,
+    "team_name": "Botswana",
+    "group_name": "Group D",
+    "fifa_ranking": 138,
+    "coach_name": "Morena Ramoreboli"
+  },
+  {
+    "team_id": 24,
+    "team_name": "Mozambique",
+    "group_name": "Group F",
+    "fifa_ranking": 102,
+    "coach_name": "Chiquinho Conde"
+  }
+]

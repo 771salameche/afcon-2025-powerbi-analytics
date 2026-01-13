@@ -1,0 +1,3986 @@
+[
+  {
+    "player_id": 1,
+    "player_name": "Yassine Bounou",
+    "team_id": 1,
+    "position": "Goalkeeper"
+  },
+  {
+    "player_id": 2,
+    "player_name": "El Mehdi Al Harrar",
+    "team_id": 1,
+    "position": "Goalkeeper"
+  },
+  {
+    "player_id": 3,
+    "player_name": "Munir El Kajoui",
+    "team_id": 1,
+    "position": "Goalkeeper"
+  },
+  {
+    "player_id": 4,
+    "player_name": "Nayef Aguerd",
+    "team_id": 1,
+    "position": "Defender"
+  },
+  {
+    "player_id": 5,
+    "player_name": "Abdelhamid Ait Boudlal",
+    "team_id": 1,
+    "position": "Defender"
+  },
+  {
+    "player_id": 6,
+    "player_name": "Romain Saïss",
+    "team_id": 1,
+    "position": "Defender"
+  },
+  {
+    "player_id": 7,
+    "player_name": "Adam Masina",
+    "team_id": 1,
+    "position": "Defender"
+  },
+  {
+    "player_id": 8,
+    "player_name": "Jawad El Yamiq",
+    "team_id": 1,
+    "position": "Defender"
+  },
+  {
+    "player_id": 9,
+    "player_name": "Anass Salah-Eddine",
+    "team_id": 1,
+    "position": "Defender"
+  },
+  {
+    "player_id": 10,
+    "player_name": "Youssef Belammari",
+    "team_id": 1,
+    "position": "Defender"
+  },
+  {
+    "player_id": 11,
+    "player_name": "Achraf Hakimi",
+    "team_id": 1,
+    "position": "Defender"
+  },
+  {
+    "player_id": 12,
+    "player_name": "Noussair Mazraoui",
+    "team_id": 1,
+    "position": "Defender"
+  },
+  {
+    "player_id": 13,
+    "player_name": "Mohamed Chibi",
+    "team_id": 1,
+    "position": "Defender"
+  },
+  {
+    "player_id": 14,
+    "player_name": "Sofyan Amrabat",
+    "team_id": 1,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 15,
+    "player_name": "Oussama Targhalline",
+    "team_id": 1,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 16,
+    "player_name": "Ismael Saibari",
+    "team_id": 1,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 17,
+    "player_name": "Neil El Aynaoui",
+    "team_id": 1,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 18,
+    "player_name": "Azzedine Ounahi",
+    "team_id": 1,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 19,
+    "player_name": "Bilal El Khannouss",
+    "team_id": 1,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 20,
+    "player_name": "Eliesse Ben Seghir",
+    "team_id": 1,
+    "position": "Forward"
+  },
+  {
+    "player_id": 21,
+    "player_name": "Abde Ezzalzouli",
+    "team_id": 1,
+    "position": "Forward"
+  },
+  {
+    "player_id": 22,
+    "player_name": "Soufiane Rahimi",
+    "team_id": 1,
+    "position": "Forward"
+  },
+  {
+    "player_id": 23,
+    "player_name": "Brahim Díaz",
+    "team_id": 1,
+    "position": "Forward"
+  },
+  {
+    "player_id": 24,
+    "player_name": "Chemsdine Talbi",
+    "team_id": 1,
+    "position": "Forward"
+  },
+  {
+    "player_id": 25,
+    "player_name": "Ilias Akhomach",
+    "team_id": 1,
+    "position": "Forward"
+  },
+  {
+    "player_id": 26,
+    "player_name": "Youssef En-Nesyri",
+    "team_id": 1,
+    "position": "Forward"
+  },
+  {
+    "player_id": 27,
+    "player_name": "Hamza Igamane",
+    "team_id": 1,
+    "position": "Forward"
+  },
+  {
+    "player_id": 28,
+    "player_name": "Ayoub El Kaabi",
+    "team_id": 1,
+    "position": "Forward"
+  },
+  {
+    "player_id": 29,
+    "player_name": "Hervé Koffi",
+    "team_id": 2,
+    "position": "Goalkeeper"
+  },
+  {
+    "player_id": 30,
+    "player_name": "Kilian Nikièma",
+    "team_id": 2,
+    "position": "Goalkeeper"
+  },
+  {
+    "player_id": 31,
+    "player_name": "Farid Ouédraogo",
+    "team_id": 2,
+    "position": "Goalkeeper"
+  },
+  {
+    "player_id": 32,
+    "player_name": "Edmond Tapsoba",
+    "team_id": 2,
+    "position": "Defender"
+  },
+  {
+    "player_id": 33,
+    "player_name": "Nasser Djiga",
+    "team_id": 2,
+    "position": "Defender"
+  },
+  {
+    "player_id": 34,
+    "player_name": "Adamo Nagalo",
+    "team_id": 2,
+    "position": "Defender"
+  },
+  {
+    "player_id": 35,
+    "player_name": "Issoufou Dayo",
+    "team_id": 2,
+    "position": "Defender"
+  },
+  {
+    "player_id": 36,
+    "player_name": "Saïdou Simporé",
+    "team_id": 2,
+    "position": "Defender"
+  },
+  {
+    "player_id": 37,
+    "player_name": "Arsène Kouassi",
+    "team_id": 2,
+    "position": "Defender"
+  },
+  {
+    "player_id": 38,
+    "player_name": "Abdoul Ayinde",
+    "team_id": 2,
+    "position": "Defender"
+  },
+  {
+    "player_id": 39,
+    "player_name": "Issa Kaboré",
+    "team_id": 2,
+    "position": "Defender"
+  },
+  {
+    "player_id": 40,
+    "player_name": "Steeve Yago",
+    "team_id": 2,
+    "position": "Defender"
+  },
+  {
+    "player_id": 41,
+    "player_name": "Ibrahim Blati Touré",
+    "team_id": 2,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 42,
+    "player_name": "Ismahila Ouédraogo",
+    "team_id": 2,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 43,
+    "player_name": "Mohamed Zougrana",
+    "team_id": 2,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 44,
+    "player_name": "Gustavo Sangaré",
+    "team_id": 2,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 45,
+    "player_name": "Abdoul Yoda",
+    "team_id": 2,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 46,
+    "player_name": "Cedric Badolo",
+    "team_id": 2,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 47,
+    "player_name": "Stephane Aziz Ki",
+    "team_id": 2,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 48,
+    "player_name": "Josué Tiendrébéogo",
+    "team_id": 2,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 49,
+    "player_name": "Pierre Landry Kabore",
+    "team_id": 2,
+    "position": "Forward"
+  },
+  {
+    "player_id": 50,
+    "player_name": "Dango Ouattara",
+    "team_id": 2,
+    "position": "Forward"
+  },
+  {
+    "player_id": 51,
+    "player_name": "Cyriaque Irié",
+    "team_id": 2,
+    "position": "Forward"
+  },
+  {
+    "player_id": 52,
+    "player_name": "Bertrand Traoré",
+    "team_id": 2,
+    "position": "Forward"
+  },
+  {
+    "player_id": 53,
+    "player_name": "Georgi Minoungou",
+    "team_id": 2,
+    "position": "Forward"
+  },
+  {
+    "player_id": 54,
+    "player_name": "Lassina Traoré",
+    "team_id": 2,
+    "position": "Forward"
+  },
+  {
+    "player_id": 55,
+    "player_name": "Mohamed Konaté",
+    "team_id": 2,
+    "position": "Forward"
+  },
+  {
+    "player_id": 56,
+    "player_name": "Ousseni Bouda",
+    "team_id": 2,
+    "position": "Forward"
+  },
+  {
+    "player_id": 57,
+    "player_name": "Simon Ngapandouetnbu",
+    "team_id": 3,
+    "position": "Goalkeeper"
+  },
+  {
+    "player_id": 58,
+    "player_name": "Devis Epassy",
+    "team_id": 3,
+    "position": "Goalkeeper"
+  },
+  {
+    "player_id": 59,
+    "player_name": "Simon Omossola",
+    "team_id": 3,
+    "position": "Goalkeeper"
+  },
+  {
+    "player_id": 60,
+    "player_name": "Edouard Sombang",
+    "team_id": 3,
+    "position": "Goalkeeper"
+  },
+  {
+    "player_id": 61,
+    "player_name": "Enzo Boyomo",
+    "team_id": 3,
+    "position": "Defender"
+  },
+  {
+    "player_id": 62,
+    "player_name": "Christopher Wooh",
+    "team_id": 3,
+    "position": "Defender"
+  },
+  {
+    "player_id": 63,
+    "player_name": "Gerzino Nyamsi",
+    "team_id": 3,
+    "position": "Defender"
+  },
+  {
+    "player_id": 64,
+    "player_name": "Samuel Kotto",
+    "team_id": 3,
+    "position": "Defender"
+  },
+  {
+    "player_id": 65,
+    "player_name": "Che Malone",
+    "team_id": 3,
+    "position": "Defender"
+  },
+  {
+    "player_id": 66,
+    "player_name": "Darlin Yongwa",
+    "team_id": 3,
+    "position": "Defender"
+  },
+  {
+    "player_id": 67,
+    "player_name": "Nouhou",
+    "team_id": 3,
+    "position": "Defender"
+  },
+  {
+    "player_id": 68,
+    "player_name": "Mahamadou Nagida",
+    "team_id": 3,
+    "position": "Defender"
+  },
+  {
+    "player_id": 69,
+    "player_name": "Junior Tchamadeu",
+    "team_id": 3,
+    "position": "Defender"
+  },
+  {
+    "player_id": 70,
+    "player_name": "Carlos Baleba",
+    "team_id": 3,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 71,
+    "player_name": "Martin Ndzie",
+    "team_id": 3,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 72,
+    "player_name": "Jean Onana",
+    "team_id": 3,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 73,
+    "player_name": "Arnold Maël Kamdem",
+    "team_id": 3,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 74,
+    "player_name": "Arthur Avom",
+    "team_id": 3,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 75,
+    "player_name": "Olivier Kemen",
+    "team_id": 3,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 76,
+    "player_name": "Junior Dina Ebimbe",
+    "team_id": 3,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 77,
+    "player_name": "Georges-Kevin N'Koudou",
+    "team_id": 3,
+    "position": "Forward"
+  },
+  {
+    "player_id": 78,
+    "player_name": "Bryan Mbeumo",
+    "team_id": 3,
+    "position": "Forward"
+  },
+  {
+    "player_id": 79,
+    "player_name": "Patrick Soko",
+    "team_id": 3,
+    "position": "Forward"
+  },
+  {
+    "player_id": 80,
+    "player_name": "Christian Bassogog",
+    "team_id": 3,
+    "position": "Forward"
+  },
+  {
+    "player_id": 81,
+    "player_name": "Christian Kofane",
+    "team_id": 3,
+    "position": "Forward"
+  },
+  {
+    "player_id": 82,
+    "player_name": "Karl Etta Eyong",
+    "team_id": 3,
+    "position": "Forward"
+  },
+  {
+    "player_id": 83,
+    "player_name": "Danny Namaso",
+    "team_id": 3,
+    "position": "Forward"
+  },
+  {
+    "player_id": 84,
+    "player_name": "Frank Magri",
+    "team_id": 3,
+    "position": "Forward"
+  },
+  {
+    "player_id": 85,
+    "player_name": "Luca Zidane",
+    "team_id": 4,
+    "position": "Goalkeeper"
+  },
+  {
+    "player_id": 86,
+    "player_name": "Oussama Benbout",
+    "team_id": 4,
+    "position": "Goalkeeper"
+  },
+  {
+    "player_id": 87,
+    "player_name": "Anthony Mandréa",
+    "team_id": 4,
+    "position": "Goalkeeper"
+  },
+  {
+    "player_id": 88,
+    "player_name": "Ramy Bensebaini",
+    "team_id": 4,
+    "position": "Defender"
+  },
+  {
+    "player_id": 89,
+    "player_name": "Samir Chergui",
+    "team_id": 4,
+    "position": "Defender"
+  },
+  {
+    "player_id": 90,
+    "player_name": "Mohamed Amine Tougai",
+    "team_id": 4,
+    "position": "Defender"
+  },
+  {
+    "player_id": 91,
+    "player_name": "Aïssa Mandi",
+    "team_id": 4,
+    "position": "Defender"
+  },
+  {
+    "player_id": 92,
+    "player_name": "Zineddine Belaid",
+    "team_id": 4,
+    "position": "Defender"
+  },
+  {
+    "player_id": 93,
+    "player_name": "Rayan Aït-Nouri",
+    "team_id": 4,
+    "position": "Defender"
+  },
+  {
+    "player_id": 94,
+    "player_name": "Jaouen Hadjam",
+    "team_id": 4,
+    "position": "Defender"
+  },
+  {
+    "player_id": 95,
+    "player_name": "Mehdi Dorval",
+    "team_id": 4,
+    "position": "Defender"
+  },
+  {
+    "player_id": 96,
+    "player_name": "Rafik Belghali",
+    "team_id": 4,
+    "position": "Defender"
+  },
+  {
+    "player_id": 97,
+    "player_name": "Youcef Atal",
+    "team_id": 4,
+    "position": "Defender"
+  },
+  {
+    "player_id": 98,
+    "player_name": "Ismaël Bennacer",
+    "team_id": 4,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 99,
+    "player_name": "Ramiz Zerrouki",
+    "team_id": 4,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 100,
+    "player_name": "Farès Chaïbi",
+    "team_id": 4,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 101,
+    "player_name": "Hicham Boudaoui",
+    "team_id": 4,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 102,
+    "player_name": "Adem Zorgane",
+    "team_id": 4,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 103,
+    "player_name": "Ibrahim Maza",
+    "team_id": 4,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 104,
+    "player_name": "Himad Abdelli",
+    "team_id": 4,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 105,
+    "player_name": "Adil Boulbina",
+    "team_id": 4,
+    "position": "Forward"
+  },
+  {
+    "player_id": 106,
+    "player_name": "Anis Hadj Moussa",
+    "team_id": 4,
+    "position": "Forward"
+  },
+  {
+    "player_id": 107,
+    "player_name": "Ilan Kebbal",
+    "team_id": 4,
+    "position": "Forward"
+  },
+  {
+    "player_id": 108,
+    "player_name": "Riyad Mahrez",
+    "team_id": 4,
+    "position": "Forward"
+  },
+  {
+    "player_id": 109,
+    "player_name": "Mohamed Amoura",
+    "team_id": 4,
+    "position": "Forward"
+  },
+  {
+    "player_id": 110,
+    "player_name": "Baghdad Bounedjah",
+    "team_id": 4,
+    "position": "Forward"
+  },
+  {
+    "player_id": 111,
+    "player_name": "Monsef Bakrar",
+    "team_id": 4,
+    "position": "Forward"
+  },
+  {
+    "player_id": 112,
+    "player_name": "Redouane Berkane",
+    "team_id": 4,
+    "position": "Forward"
+  },
+  {
+    "player_id": 113,
+    "player_name": "Matthieu Epolo",
+    "team_id": 5,
+    "position": "Goalkeeper"
+  },
+  {
+    "player_id": 114,
+    "player_name": "Timothy Fayulu",
+    "team_id": 5,
+    "position": "Goalkeeper"
+  },
+  {
+    "player_id": 115,
+    "player_name": "Dimitry Bertaud",
+    "team_id": 5,
+    "position": "Goalkeeper"
+  },
+  {
+    "player_id": 116,
+    "player_name": "Lionel Mpasi-Nzau",
+    "team_id": 5,
+    "position": "Goalkeeper"
+  },
+  {
+    "player_id": 117,
+    "player_name": "Axel Tuanzebe",
+    "team_id": 5,
+    "position": "Defender"
+  },
+  {
+    "player_id": 118,
+    "player_name": "Steve Kapuadi",
+    "team_id": 5,
+    "position": "Defender"
+  },
+  {
+    "player_id": 119,
+    "player_name": "Chancel Mbemba",
+    "team_id": 5,
+    "position": "Defender"
+  },
+  {
+    "player_id": 120,
+    "player_name": "Rocky Bushiri",
+    "team_id": 5,
+    "position": "Defender"
+  },
+  {
+    "player_id": 121,
+    "player_name": "Dylan Batubinsika",
+    "team_id": 5,
+    "position": "Defender"
+  },
+  {
+    "player_id": 122,
+    "player_name": "Joris Kayembe",
+    "team_id": 5,
+    "position": "Defender"
+  },
+  {
+    "player_id": 123,
+    "player_name": "Arthur Masuaku",
+    "team_id": 5,
+    "position": "Defender"
+  },
+  {
+    "player_id": 124,
+    "player_name": "Aaron Wan-Bissaka",
+    "team_id": 5,
+    "position": "Defender"
+  },
+  {
+    "player_id": 125,
+    "player_name": "Gédéon Kalulu",
+    "team_id": 5,
+    "position": "Defender"
+  },
+  {
+    "player_id": 126,
+    "player_name": "Ngal'ayel Mukau",
+    "team_id": 5,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 127,
+    "player_name": "Charles Pickel",
+    "team_id": 5,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 128,
+    "player_name": "Noah Sadiki",
+    "team_id": 5,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 129,
+    "player_name": "Edo Kayembe",
+    "team_id": 5,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 130,
+    "player_name": "Samuel Moutoussamy",
+    "team_id": 5,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 131,
+    "player_name": "Mario Stroeykens",
+    "team_id": 5,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 132,
+    "player_name": "Gaël Kakuta",
+    "team_id": 5,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 133,
+    "player_name": "Michel-Ange Balikwisha",
+    "team_id": 5,
+    "position": "Forward"
+  },
+  {
+    "player_id": 134,
+    "player_name": "Brian Cipenga",
+    "team_id": 5,
+    "position": "Forward"
+  },
+  {
+    "player_id": 135,
+    "player_name": "Nathanaël Mbuku",
+    "team_id": 5,
+    "position": "Forward"
+  },
+  {
+    "player_id": 136,
+    "player_name": "Théo Bongonda",
+    "team_id": 5,
+    "position": "Forward"
+  },
+  {
+    "player_id": 137,
+    "player_name": "Simon Banza",
+    "team_id": 5,
+    "position": "Forward"
+  },
+  {
+    "player_id": 138,
+    "player_name": "Samuel Essende",
+    "team_id": 5,
+    "position": "Forward"
+  },
+  {
+    "player_id": 139,
+    "player_name": "Meschack Elia",
+    "team_id": 5,
+    "position": "Forward"
+  },
+  {
+    "player_id": 140,
+    "player_name": "Fiston Mayele",
+    "team_id": 5,
+    "position": "Forward"
+  },
+  {
+    "player_id": 141,
+    "player_name": "Cédric Bakambu",
+    "team_id": 5,
+    "position": "Forward"
+  },
+  {
+    "player_id": 142,
+    "player_name": "Yehvann Diouf",
+    "team_id": 6,
+    "position": "Goalkeeper"
+  },
+  {
+    "player_id": 143,
+    "player_name": "Edouard Mendy",
+    "team_id": 6,
+    "position": "Goalkeeper"
+  },
+  {
+    "player_id": 144,
+    "player_name": "Mory Diaw",
+    "team_id": 6,
+    "position": "Goalkeeper"
+  },
+  {
+    "player_id": 145,
+    "player_name": "Mamadou Sarr",
+    "team_id": 6,
+    "position": "Defender"
+  },
+  {
+    "player_id": 146,
+    "player_name": "Moussa Niakhaté",
+    "team_id": 6,
+    "position": "Defender"
+  },
+  {
+    "player_id": 147,
+    "player_name": "Kalidou Koulibaly",
+    "team_id": 6,
+    "position": "Defender"
+  },
+  {
+    "player_id": 148,
+    "player_name": "Antoine Mendy",
+    "team_id": 6,
+    "position": "Defender"
+  },
+  {
+    "player_id": 149,
+    "player_name": "Abdoulaye Seck",
+    "team_id": 6,
+    "position": "Defender"
+  },
+  {
+    "player_id": 150,
+    "player_name": "El Hadji Malick Diouf",
+    "team_id": 6,
+    "position": "Defender"
+  },
+  {
+    "player_id": 151,
+    "player_name": "Ismail Jakobs",
+    "team_id": 6,
+    "position": "Defender"
+  },
+  {
+    "player_id": 152,
+    "player_name": "Pape Gueye",
+    "team_id": 6,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 153,
+    "player_name": "Mamadou Lamine Camara",
+    "team_id": 6,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 154,
+    "player_name": "Idrissa Gueye",
+    "team_id": 6,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 155,
+    "player_name": "Pape Matar Sarr",
+    "team_id": 6,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 156,
+    "player_name": "Habib Diarra",
+    "team_id": 6,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 157,
+    "player_name": "Lamine Camara",
+    "team_id": 6,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 158,
+    "player_name": "Pathé Ciss",
+    "team_id": 6,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 159,
+    "player_name": "Sadio Mané",
+    "team_id": 6,
+    "position": "Forward"
+  },
+  {
+    "player_id": 160,
+    "player_name": "Cheikh Sabaly",
+    "team_id": 6,
+    "position": "Forward"
+  },
+  {
+    "player_id": 161,
+    "player_name": "Iliman Ndiaye",
+    "team_id": 6,
+    "position": "Forward"
+  },
+  {
+    "player_id": 162,
+    "player_name": "Ismaïla Sarr",
+    "team_id": 6,
+    "position": "Forward"
+  },
+  {
+    "player_id": 163,
+    "player_name": "Ibrahim Mbaye",
+    "team_id": 6,
+    "position": "Forward"
+  },
+  {
+    "player_id": 164,
+    "player_name": "Krépin Diatta",
+    "team_id": 6,
+    "position": "Forward"
+  },
+  {
+    "player_id": 165,
+    "player_name": "Nicolas Jackson",
+    "team_id": 6,
+    "position": "Forward"
+  },
+  {
+    "player_id": 166,
+    "player_name": "Boulaye Dia",
+    "team_id": 6,
+    "position": "Forward"
+  },
+  {
+    "player_id": 167,
+    "player_name": "Cherif Ndiaye",
+    "team_id": 6,
+    "position": "Forward"
+  },
+  {
+    "player_id": 168,
+    "player_name": "Habib Diallo",
+    "team_id": 6,
+    "position": "Forward"
+  },
+  {
+    "player_id": 169,
+    "player_name": "Mohamed El Shenawy",
+    "team_id": 7,
+    "position": "Goalkeeper"
+  },
+  {
+    "player_id": 170,
+    "player_name": "Oufa Shobeir",
+    "team_id": 7,
+    "position": "Goalkeeper"
+  },
+  {
+    "player_id": 171,
+    "player_name": "Mohamed Sobhi",
+    "team_id": 7,
+    "position": "Goalkeeper"
+  },
+  {
+    "player_id": 172,
+    "player_name": "Ahmed El Shenawy",
+    "team_id": 7,
+    "position": "Goalkeeper"
+  },
+  {
+    "player_id": 173,
+    "player_name": "Hossam Abdelmaguid",
+    "team_id": 7,
+    "position": "Defender"
+  },
+  {
+    "player_id": 174,
+    "player_name": "Mohamed Ismail",
+    "team_id": 7,
+    "position": "Defender"
+  },
+  {
+    "player_id": 175,
+    "player_name": "Ramy Rabia",
+    "team_id": 7,
+    "position": "Defender"
+  },
+  {
+    "player_id": 176,
+    "player_name": "Khaled Sobhi",
+    "team_id": 7,
+    "position": "Defender"
+  },
+  {
+    "player_id": 177,
+    "player_name": "Yasser Ibrahim",
+    "team_id": 7,
+    "position": "Defender"
+  },
+  {
+    "player_id": 178,
+    "player_name": "Mohamed Hamdi",
+    "team_id": 7,
+    "position": "Defender"
+  },
+  {
+    "player_id": 179,
+    "player_name": "Ahmed Fatouh",
+    "team_id": 7,
+    "position": "Defender"
+  },
+  {
+    "player_id": 180,
+    "player_name": "Mohamed Hany",
+    "team_id": 7,
+    "position": "Defender"
+  },
+  {
+    "player_id": 181,
+    "player_name": "Ahmed Eid",
+    "team_id": 7,
+    "position": "Defender"
+  },
+  {
+    "player_id": 182,
+    "player_name": "Marwan Ateya",
+    "team_id": 7,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 183,
+    "player_name": "Hamdy Fathy",
+    "team_id": 7,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 184,
+    "player_name": "Mohanad Lasheen",
+    "team_id": 7,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 185,
+    "player_name": "Emam Ashour",
+    "team_id": 7,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 186,
+    "player_name": "Mohamed Shehata",
+    "team_id": 7,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 187,
+    "player_name": "Mahmoud Saber",
+    "team_id": 7,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 188,
+    "player_name": "Trezeguet",
+    "team_id": 7,
+    "position": "Forward"
+  },
+  {
+    "player_id": 189,
+    "player_name": "Ibrahim Adel",
+    "team_id": 7,
+    "position": "Forward"
+  },
+  {
+    "player_id": 190,
+    "player_name": "Mohamed Salah",
+    "team_id": 7,
+    "position": "Forward"
+  },
+  {
+    "player_id": 191,
+    "player_name": "Zizo",
+    "team_id": 7,
+    "position": "Forward"
+  },
+  {
+    "player_id": 192,
+    "player_name": "Mostafa Fathi",
+    "team_id": 7,
+    "position": "Forward"
+  },
+  {
+    "player_id": 193,
+    "player_name": "Omar Marmoush",
+    "team_id": 7,
+    "position": "Forward"
+  },
+  {
+    "player_id": 194,
+    "player_name": "Mostafa Mohamed",
+    "team_id": 7,
+    "position": "Forward"
+  },
+  {
+    "player_id": 195,
+    "player_name": "Osama Faisal",
+    "team_id": 7,
+    "position": "Forward"
+  },
+  {
+    "player_id": 196,
+    "player_name": "Salah Mohsen",
+    "team_id": 7,
+    "position": "Forward"
+  },
+  {
+    "player_id": 197,
+    "player_name": "Neblú",
+    "team_id": 8,
+    "position": "Goalkeeper"
+  },
+  {
+    "player_id": 198,
+    "player_name": "Signori Antonio",
+    "team_id": 8,
+    "position": "Goalkeeper"
+  },
+  {
+    "player_id": 199,
+    "player_name": "Hugo Marques",
+    "team_id": 8,
+    "position": "Goalkeeper"
+  },
+  {
+    "player_id": 200,
+    "player_name": "David Carmo",
+    "team_id": 8,
+    "position": "Defender"
+  },
+  {
+    "player_id": 201,
+    "player_name": "Gaspar",
+    "team_id": 8,
+    "position": "Defender"
+  },
+  {
+    "player_id": 202,
+    "player_name": "Clinton Mata",
+    "team_id": 8,
+    "position": "Defender"
+  },
+  {
+    "player_id": 203,
+    "player_name": "Buatu",
+    "team_id": 8,
+    "position": "Defender"
+  },
+  {
+    "player_id": 204,
+    "player_name": "Pedro Bondo",
+    "team_id": 8,
+    "position": "Defender"
+  },
+  {
+    "player_id": 205,
+    "player_name": "Núrio Fortuna",
+    "team_id": 8,
+    "position": "Defender"
+  },
+  {
+    "player_id": 206,
+    "player_name": "Tó Carneiro",
+    "team_id": 8,
+    "position": "Defender"
+  },
+  {
+    "player_id": 207,
+    "player_name": "Rui Modesto",
+    "team_id": 8,
+    "position": "Defender"
+  },
+  {
+    "player_id": 208,
+    "player_name": "Eddie Afonso",
+    "team_id": 8,
+    "position": "Defender"
+  },
+  {
+    "player_id": 209,
+    "player_name": "Maestro",
+    "team_id": 8,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 210,
+    "player_name": "Show",
+    "team_id": 8,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 211,
+    "player_name": "Kelliano",
+    "team_id": 8,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 212,
+    "player_name": "Beni Mukendi",
+    "team_id": 8,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 213,
+    "player_name": "Mário Balbúrdia",
+    "team_id": 8,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 214,
+    "player_name": "Fredy",
+    "team_id": 8,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 215,
+    "player_name": "Randy Nteka",
+    "team_id": 8,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 216,
+    "player_name": "Milson",
+    "team_id": 8,
+    "position": "Forward"
+  },
+  {
+    "player_id": 217,
+    "player_name": "Chico Banza",
+    "team_id": 8,
+    "position": "Forward"
+  },
+  {
+    "player_id": 218,
+    "player_name": "Ary Papel",
+    "team_id": 8,
+    "position": "Forward"
+  },
+  {
+    "player_id": 219,
+    "player_name": "Manuel Benson",
+    "team_id": 8,
+    "position": "Forward"
+  },
+  {
+    "player_id": 220,
+    "player_name": "M'Bala Nzola",
+    "team_id": 8,
+    "position": "Forward"
+  },
+  {
+    "player_id": 221,
+    "player_name": "Zito Luvumbo",
+    "team_id": 8,
+    "position": "Forward"
+  },
+  {
+    "player_id": 222,
+    "player_name": "Gelson Dala",
+    "team_id": 8,
+    "position": "Forward"
+  },
+  {
+    "player_id": 223,
+    "player_name": "Mabululu",
+    "team_id": 8,
+    "position": "Forward"
+  },
+  {
+    "player_id": 224,
+    "player_name": "Jesús Owono",
+    "team_id": 9,
+    "position": "Goalkeeper"
+  },
+  {
+    "player_id": 225,
+    "player_name": "Aitor Embela",
+    "team_id": 9,
+    "position": "Goalkeeper"
+  },
+  {
+    "player_id": 226,
+    "player_name": "Manuel Sapunga",
+    "team_id": 9,
+    "position": "Goalkeeper"
+  },
+  {
+    "player_id": 227,
+    "player_name": "Saúl Coco",
+    "team_id": 9,
+    "position": "Defender"
+  },
+  {
+    "player_id": 228,
+    "player_name": "Esteban Orozco",
+    "team_id": 9,
+    "position": "Defender"
+  },
+  {
+    "player_id": 229,
+    "player_name": "Marvin Anieboh",
+    "team_id": 9,
+    "position": "Defender"
+  },
+  {
+    "player_id": 230,
+    "player_name": "Charles Ondo",
+    "team_id": 9,
+    "position": "Defender"
+  },
+  {
+    "player_id": 231,
+    "player_name": "Javier Mum",
+    "team_id": 9,
+    "position": "Defender"
+  },
+  {
+    "player_id": 232,
+    "player_name": "Basilio Ndong",
+    "team_id": 9,
+    "position": "Defender"
+  },
+  {
+    "player_id": 233,
+    "player_name": "Prince Ngaah",
+    "team_id": 9,
+    "position": "Defender"
+  },
+  {
+    "player_id": 234,
+    "player_name": "Carlos Akapo",
+    "team_id": 9,
+    "position": "Defender"
+  },
+  {
+    "player_id": 235,
+    "player_name": "Néstor Senra",
+    "team_id": 9,
+    "position": "Defender"
+  },
+  {
+    "player_id": 236,
+    "player_name": "Omar Mascarell",
+    "team_id": 9,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 237,
+    "player_name": "Pedro Obiang",
+    "team_id": 9,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 238,
+    "player_name": "Pablo Ganet",
+    "team_id": 9,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 239,
+    "player_name": "Álex Balboa",
+    "team_id": 9,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 240,
+    "player_name": "Álex Masogo",
+    "team_id": 9,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 241,
+    "player_name": "Pepín Machín",
+    "team_id": 9,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 242,
+    "player_name": "Jannick Buyla",
+    "team_id": 9,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 243,
+    "player_name": "Gael Joel Akogo",
+    "team_id": 9,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 244,
+    "player_name": "Santiago Eneme",
+    "team_id": 9,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 245,
+    "player_name": "Josete Miranda",
+    "team_id": 9,
+    "position": "Forward"
+  },
+  {
+    "player_id": 246,
+    "player_name": "Luis Asué",
+    "team_id": 9,
+    "position": "Forward"
+  },
+  {
+    "player_id": 247,
+    "player_name": "Iban Salvador",
+    "team_id": 9,
+    "position": "Forward"
+  },
+  {
+    "player_id": 248,
+    "player_name": "Dorian Hanza",
+    "team_id": 9,
+    "position": "Forward"
+  },
+  {
+    "player_id": 249,
+    "player_name": "Loren Zúñiga",
+    "team_id": 9,
+    "position": "Forward"
+  },
+  {
+    "player_id": 250,
+    "player_name": "Emilio Nsue",
+    "team_id": 9,
+    "position": "Forward"
+  },
+  {
+    "player_id": 251,
+    "player_name": "Nabil Ondó",
+    "team_id": 9,
+    "position": "Forward"
+  },
+  {
+    "player_id": 252,
+    "player_name": "Yahia Fofana",
+    "team_id": 10,
+    "position": "Goalkeeper"
+  },
+  {
+    "player_id": 253,
+    "player_name": "Alban Lafont",
+    "team_id": 10,
+    "position": "Goalkeeper"
+  },
+  {
+    "player_id": 254,
+    "player_name": "Mohamed Koné",
+    "team_id": 10,
+    "position": "Goalkeeper"
+  },
+  {
+    "player_id": 255,
+    "player_name": "Ousmane Diomande",
+    "team_id": 10,
+    "position": "Defender"
+  },
+  {
+    "player_id": 256,
+    "player_name": "Evan Ndicka",
+    "team_id": 10,
+    "position": "Defender"
+  },
+  {
+    "player_id": 257,
+    "player_name": "Odilon Kossounou",
+    "team_id": 10,
+    "position": "Defender"
+  },
+  {
+    "player_id": 258,
+    "player_name": "Emmanuel Agbadou",
+    "team_id": 10,
+    "position": "Defender"
+  },
+  {
+    "player_id": 259,
+    "player_name": "Jean-Philippe Gbamin",
+    "team_id": 10,
+    "position": "Defender"
+  },
+  {
+    "player_id": 260,
+    "player_name": "Willy Boly",
+    "team_id": 10,
+    "position": "Defender"
+  },
+  {
+    "player_id": 261,
+    "player_name": "Christopher Operi",
+    "team_id": 10,
+    "position": "Defender"
+  },
+  {
+    "player_id": 262,
+    "player_name": "Ghislain Konan",
+    "team_id": 10,
+    "position": "Defender"
+  },
+  {
+    "player_id": 263,
+    "player_name": "Guela Doué",
+    "team_id": 10,
+    "position": "Defender"
+  },
+  {
+    "player_id": 264,
+    "player_name": "Armel Zohouri",
+    "team_id": 10,
+    "position": "Defender"
+  },
+  {
+    "player_id": 265,
+    "player_name": "Ibrahim Sangaré",
+    "team_id": 10,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 266,
+    "player_name": "Jean Michaël Seri",
+    "team_id": 10,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 267,
+    "player_name": "Franck Kessié",
+    "team_id": 10,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 268,
+    "player_name": "Seko Fofana",
+    "team_id": 10,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 269,
+    "player_name": "Christ Inao Oulaï",
+    "team_id": 10,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 270,
+    "player_name": "Yan Diomande",
+    "team_id": 10,
+    "position": "Forward"
+  },
+  {
+    "player_id": 271,
+    "player_name": "Bazoumana Touré",
+    "team_id": 10,
+    "position": "Forward"
+  },
+  {
+    "player_id": 272,
+    "player_name": "Wilfried Zaha",
+    "team_id": 10,
+    "position": "Forward"
+  },
+  {
+    "player_id": 273,
+    "player_name": "Parfait Guiagon",
+    "team_id": 10,
+    "position": "Forward"
+  },
+  {
+    "player_id": 274,
+    "player_name": "Amad Diallo",
+    "team_id": 10,
+    "position": "Forward"
+  },
+  {
+    "player_id": 275,
+    "player_name": "Evann Guessand",
+    "team_id": 10,
+    "position": "Forward"
+  },
+  {
+    "player_id": 276,
+    "player_name": "Oumar Diakité",
+    "team_id": 10,
+    "position": "Forward"
+  },
+  {
+    "player_id": 277,
+    "player_name": "Jean-Philippe Krasso",
+    "team_id": 10,
+    "position": "Forward"
+  },
+  {
+    "player_id": 278,
+    "player_name": "Vakoun Bayo",
+    "team_id": 10,
+    "position": "Forward"
+  },
+  {
+    "player_id": 279,
+    "player_name": "Loyce Mbaba",
+    "team_id": 11,
+    "position": "Goalkeeper"
+  },
+  {
+    "player_id": 280,
+    "player_name": "Anse Ngoubi Demba",
+    "team_id": 11,
+    "position": "Goalkeeper"
+  },
+  {
+    "player_id": 281,
+    "player_name": "François Bekale",
+    "team_id": 11,
+    "position": "Goalkeeper"
+  },
+  {
+    "player_id": 282,
+    "player_name": "Alex Moucketou-Moussounda",
+    "team_id": 11,
+    "position": "Defender"
+  },
+  {
+    "player_id": 283,
+    "player_name": "Aaron Appindangoyé",
+    "team_id": 11,
+    "position": "Defender"
+  },
+  {
+    "player_id": 284,
+    "player_name": "Jonathan Do Marcolino",
+    "team_id": 11,
+    "position": "Defender"
+  },
+  {
+    "player_id": 285,
+    "player_name": "Yannis M'Bemba",
+    "team_id": 11,
+    "position": "Defender"
+  },
+  {
+    "player_id": 286,
+    "player_name": "Bruno Ecuele Manga",
+    "team_id": 11,
+    "position": "Defender"
+  },
+  {
+    "player_id": 287,
+    "player_name": "Mick Omfia",
+    "team_id": 11,
+    "position": "Defender"
+  },
+  {
+    "player_id": 288,
+    "player_name": "Jacques Ekomié",
+    "team_id": 11,
+    "position": "Defender"
+  },
+  {
+    "player_id": 289,
+    "player_name": "Johann Obiang",
+    "team_id": 11,
+    "position": "Defender"
+  },
+  {
+    "player_id": 290,
+    "player_name": "Anthony Oyono",
+    "team_id": 11,
+    "position": "Defender"
+  },
+  {
+    "player_id": 291,
+    "player_name": "Jérémy Oyono",
+    "team_id": 11,
+    "position": "Defender"
+  },
+  {
+    "player_id": 292,
+    "player_name": "Mario Lemina",
+    "team_id": 11,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 293,
+    "player_name": "Didier Ndong",
+    "team_id": 11,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 294,
+    "player_name": "Clench Loufilou",
+    "team_id": 11,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 295,
+    "player_name": "André Poko",
+    "team_id": 11,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 296,
+    "player_name": "Samaké Nzé Bagnama",
+    "team_id": 11,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 297,
+    "player_name": "Guélor Kanga",
+    "team_id": 11,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 298,
+    "player_name": "Teddy Averlant",
+    "team_id": 11,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 299,
+    "player_name": "Eric Bocoum",
+    "team_id": 11,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 300,
+    "player_name": "Denis Bouanga",
+    "team_id": 11,
+    "position": "Forward"
+  },
+  {
+    "player_id": 301,
+    "player_name": "Shavy Babicka",
+    "team_id": 11,
+    "position": "Forward"
+  },
+  {
+    "player_id": 302,
+    "player_name": "Jim Allevinah",
+    "team_id": 11,
+    "position": "Forward"
+  },
+  {
+    "player_id": 303,
+    "player_name": "Royce Openda",
+    "team_id": 11,
+    "position": "Forward"
+  },
+  {
+    "player_id": 304,
+    "player_name": "Pierre-Emerick Aubameyang",
+    "team_id": 11,
+    "position": "Forward"
+  },
+  {
+    "player_id": 305,
+    "player_name": "Edlin Randy Essang-Matouti",
+    "team_id": 11,
+    "position": "Forward"
+  },
+  {
+    "player_id": 306,
+    "player_name": "Malick Evouna",
+    "team_id": 11,
+    "position": "Forward"
+  },
+  {
+    "player_id": 307,
+    "player_name": "Salim Magoola",
+    "team_id": 12,
+    "position": "Goalkeeper"
+  },
+  {
+    "player_id": 308,
+    "player_name": "Nafian Alionzi",
+    "team_id": 12,
+    "position": "Goalkeeper"
+  },
+  {
+    "player_id": 309,
+    "player_name": "Denis Onyango",
+    "team_id": 12,
+    "position": "Goalkeeper"
+  },
+  {
+    "player_id": 310,
+    "player_name": "Toby Sibbick",
+    "team_id": 12,
+    "position": "Defender"
+  },
+  {
+    "player_id": 311,
+    "player_name": "Timothy Awany",
+    "team_id": 12,
+    "position": "Defender"
+  },
+  {
+    "player_id": 312,
+    "player_name": "Elio Capradossi",
+    "team_id": 12,
+    "position": "Defender"
+  },
+  {
+    "player_id": 313,
+    "player_name": "Hilary Mukundane",
+    "team_id": 12,
+    "position": "Defender"
+  },
+  {
+    "player_id": 314,
+    "player_name": "Rogers Torach",
+    "team_id": 12,
+    "position": "Defender"
+  },
+  {
+    "player_id": 315,
+    "player_name": "Aziz Kayondo",
+    "team_id": 12,
+    "position": "Defender"
+  },
+  {
+    "player_id": 316,
+    "player_name": "Jordan Obita",
+    "team_id": 12,
+    "position": "Defender"
+  },
+  {
+    "player_id": 317,
+    "player_name": "Isaac Muleme",
+    "team_id": 12,
+    "position": "Defender"
+  },
+  {
+    "player_id": 318,
+    "player_name": "Baba Alhassan",
+    "team_id": 12,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 319,
+    "player_name": "Kenneth Semakula",
+    "team_id": 12,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 320,
+    "player_name": "Khalid Aucho",
+    "team_id": 12,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 321,
+    "player_name": "Bobosi Byaruhanga",
+    "team_id": 12,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 322,
+    "player_name": "Ronald Ssekiganda",
+    "team_id": 12,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 323,
+    "player_name": "Allan Okello",
+    "team_id": 12,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 324,
+    "player_name": "Travis Mutyaba",
+    "team_id": 12,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 325,
+    "player_name": "Rogers Mato",
+    "team_id": 12,
+    "position": "Forward"
+  },
+  {
+    "player_id": 326,
+    "player_name": "Melvyn Lorenzen",
+    "team_id": 12,
+    "position": "Forward"
+  },
+  {
+    "player_id": 327,
+    "player_name": "Shafik Nana Kwikiriza",
+    "team_id": 12,
+    "position": "Forward"
+  },
+  {
+    "player_id": 328,
+    "player_name": "Ivan Ahimbisibwe",
+    "team_id": 12,
+    "position": "Forward"
+  },
+  {
+    "player_id": 329,
+    "player_name": "Uche Ikpeazu",
+    "team_id": 12,
+    "position": "Forward"
+  },
+  {
+    "player_id": 330,
+    "player_name": "Steven Mukwala",
+    "team_id": 12,
+    "position": "Forward"
+  },
+  {
+    "player_id": 331,
+    "player_name": "Denis Omedi",
+    "team_id": 12,
+    "position": "Forward"
+  },
+  {
+    "player_id": 332,
+    "player_name": "Jude Ssemugabi",
+    "team_id": 12,
+    "position": "Forward"
+  },
+  {
+    "player_id": 333,
+    "player_name": "Reagan Mpande",
+    "team_id": 12,
+    "position": "Forward"
+  },
+  {
+    "player_id": 334,
+    "player_name": "James Bogere",
+    "team_id": 12,
+    "position": "Forward"
+  },
+  {
+    "player_id": 335,
+    "player_name": "Sipho Chaine",
+    "team_id": 13,
+    "position": "Goalkeeper"
+  },
+  {
+    "player_id": 336,
+    "player_name": "Ronwen Williams",
+    "team_id": 13,
+    "position": "Goalkeeper"
+  },
+  {
+    "player_id": 337,
+    "player_name": "Ricardo Goss",
+    "team_id": 13,
+    "position": "Goalkeeper"
+  },
+  {
+    "player_id": 338,
+    "player_name": "Siyabonga Ngezana",
+    "team_id": 13,
+    "position": "Defender"
+  },
+  {
+    "player_id": 339,
+    "player_name": "Nkosinathi Sibisi",
+    "team_id": 13,
+    "position": "Defender"
+  },
+  {
+    "player_id": 340,
+    "player_name": "Mbekezeli Mbokazi",
+    "team_id": 13,
+    "position": "Defender"
+  },
+  {
+    "player_id": 341,
+    "player_name": "Khulumani Ndamane",
+    "team_id": 13,
+    "position": "Defender"
+  },
+  {
+    "player_id": 342,
+    "player_name": "Thabo Moloisane",
+    "team_id": 13,
+    "position": "Defender"
+  },
+  {
+    "player_id": 343,
+    "player_name": "Tylon Smith",
+    "team_id": 13,
+    "position": "Defender"
+  },
+  {
+    "player_id": 344,
+    "player_name": "Samukelo Kabini",
+    "team_id": 13,
+    "position": "Defender"
+  },
+  {
+    "player_id": 345,
+    "player_name": "Aubrey Modiba",
+    "team_id": 13,
+    "position": "Defender"
+  },
+  {
+    "player_id": 346,
+    "player_name": "Khuliso Mudau",
+    "team_id": 13,
+    "position": "Defender"
+  },
+  {
+    "player_id": 347,
+    "player_name": "Thabang Matuludi",
+    "team_id": 13,
+    "position": "Defender"
+  },
+  {
+    "player_id": 348,
+    "player_name": "Teboho Mokoena",
+    "team_id": 13,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 349,
+    "player_name": "Bathusi Aubaas",
+    "team_id": 13,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 350,
+    "player_name": "Thalente Mbatha",
+    "team_id": 13,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 351,
+    "player_name": "Sipho Mbule",
+    "team_id": 13,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 352,
+    "player_name": "Yaya Sithole",
+    "team_id": 13,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 353,
+    "player_name": "Mduduzi Shabalala",
+    "team_id": 13,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 354,
+    "player_name": "Relebohile Mofokeng",
+    "team_id": 13,
+    "position": "Forward"
+  },
+  {
+    "player_id": 355,
+    "player_name": "Oswin Appollis",
+    "team_id": 13,
+    "position": "Forward"
+  },
+  {
+    "player_id": 356,
+    "player_name": "Shandre Campbell",
+    "team_id": 13,
+    "position": "Forward"
+  },
+  {
+    "player_id": 357,
+    "player_name": "Tshepang Moremi",
+    "team_id": 13,
+    "position": "Forward"
+  },
+  {
+    "player_id": 358,
+    "player_name": "Mohau Nkota",
+    "team_id": 13,
+    "position": "Forward"
+  },
+  {
+    "player_id": 359,
+    "player_name": "Elias Mokwana",
+    "team_id": 13,
+    "position": "Forward"
+  },
+  {
+    "player_id": 360,
+    "player_name": "Lyle Foster",
+    "team_id": 13,
+    "position": "Forward"
+  },
+  {
+    "player_id": 361,
+    "player_name": "Iqraam Rayners",
+    "team_id": 13,
+    "position": "Forward"
+  },
+  {
+    "player_id": 362,
+    "player_name": "Evidence Makgopa",
+    "team_id": 13,
+    "position": "Forward"
+  },
+  {
+    "player_id": 363,
+    "player_name": "Aymen Dahmen",
+    "team_id": 14,
+    "position": "Goalkeeper"
+  },
+  {
+    "player_id": 364,
+    "player_name": "Bechir Ben Said",
+    "team_id": 14,
+    "position": "Goalkeeper"
+  },
+  {
+    "player_id": 365,
+    "player_name": "Noureddine Farhati",
+    "team_id": 14,
+    "position": "Goalkeeper"
+  },
+  {
+    "player_id": 366,
+    "player_name": "Sabri Ben Hessen",
+    "team_id": 14,
+    "position": "Goalkeeper"
+  },
+  {
+    "player_id": 367,
+    "player_name": "Montassar Talbi",
+    "team_id": 14,
+    "position": "Defender"
+  },
+  {
+    "player_id": 368,
+    "player_name": "Yassine Meriah",
+    "team_id": 14,
+    "position": "Defender"
+  },
+  {
+    "player_id": 369,
+    "player_name": "Dylan Bronn",
+    "team_id": 14,
+    "position": "Defender"
+  },
+  {
+    "player_id": 370,
+    "player_name": "Nader Ghandri",
+    "team_id": 14,
+    "position": "Defender"
+  },
+  {
+    "player_id": 371,
+    "player_name": "Adem Arous",
+    "team_id": 14,
+    "position": "Defender"
+  },
+  {
+    "player_id": 372,
+    "player_name": "Ali Abdi",
+    "team_id": 14,
+    "position": "Defender"
+  },
+  {
+    "player_id": 373,
+    "player_name": "Ali Maâloul",
+    "team_id": 14,
+    "position": "Defender"
+  },
+  {
+    "player_id": 374,
+    "player_name": "Yan Valery",
+    "team_id": 14,
+    "position": "Defender"
+  },
+  {
+    "player_id": 375,
+    "player_name": "Mohamed Ben Ali",
+    "team_id": 14,
+    "position": "Defender"
+  },
+  {
+    "player_id": 376,
+    "player_name": "Ellyes Skhiri",
+    "team_id": 14,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 377,
+    "player_name": "Mohamed Belhadj Mahmoud",
+    "team_id": 14,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 378,
+    "player_name": "Mohamed Ali Ben Romdhane",
+    "team_id": 14,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 379,
+    "player_name": "Houssem Tka",
+    "team_id": 14,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 380,
+    "player_name": "Ferjani Sassi",
+    "team_id": 14,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 381,
+    "player_name": "Hannibal",
+    "team_id": 14,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 382,
+    "player_name": "Ismaël Gharbi",
+    "team_id": 14,
+    "position": "Forward"
+  },
+  {
+    "player_id": 383,
+    "player_name": "Elias Saad",
+    "team_id": 14,
+    "position": "Forward"
+  },
+  {
+    "player_id": 384,
+    "player_name": "Sebastian Tounekti",
+    "team_id": 14,
+    "position": "Forward"
+  },
+  {
+    "player_id": 385,
+    "player_name": "Elias Achouri",
+    "team_id": 14,
+    "position": "Forward"
+  },
+  {
+    "player_id": 386,
+    "player_name": "Naïm Sliti",
+    "team_id": 14,
+    "position": "Forward"
+  },
+  {
+    "player_id": 387,
+    "player_name": "Mortadha Ben Ouanes",
+    "team_id": 14,
+    "position": "Forward"
+  },
+  {
+    "player_id": 388,
+    "player_name": "Firas Chaouat",
+    "team_id": 14,
+    "position": "Forward"
+  },
+  {
+    "player_id": 389,
+    "player_name": "Hazem Mastouri",
+    "team_id": 14,
+    "position": "Forward"
+  },
+  {
+    "player_id": 390,
+    "player_name": "Seifeddine Jaziri",
+    "team_id": 14,
+    "position": "Forward"
+  },
+  {
+    "player_id": 391,
+    "player_name": "Stanley Nwabali",
+    "team_id": 15,
+    "position": "Goalkeeper"
+  },
+  {
+    "player_id": 392,
+    "player_name": "Francis Uzoho",
+    "team_id": 15,
+    "position": "Goalkeeper"
+  },
+  {
+    "player_id": 393,
+    "player_name": "Amas Obasogie",
+    "team_id": 15,
+    "position": "Goalkeeper"
+  },
+  {
+    "player_id": 394,
+    "player_name": "Calvin Bassey",
+    "team_id": 15,
+    "position": "Defender"
+  },
+  {
+    "player_id": 395,
+    "player_name": "Igoh Ogbu",
+    "team_id": 15,
+    "position": "Defender"
+  },
+  {
+    "player_id": 396,
+    "player_name": "Chidozie Awaziem",
+    "team_id": 15,
+    "position": "Defender"
+  },
+  {
+    "player_id": 397,
+    "player_name": "Semi Ajayi",
+    "team_id": 15,
+    "position": "Defender"
+  },
+  {
+    "player_id": 398,
+    "player_name": "Zaidu Sanusi",
+    "team_id": 15,
+    "position": "Defender"
+  },
+  {
+    "player_id": 399,
+    "player_name": "Bruno Onyemaechi",
+    "team_id": 15,
+    "position": "Defender"
+  },
+  {
+    "player_id": 400,
+    "player_name": "Bright Osayi-Samuel",
+    "team_id": 15,
+    "position": "Defender"
+  },
+  {
+    "player_id": 401,
+    "player_name": "Ryan Alebiosu",
+    "team_id": 15,
+    "position": "Defender"
+  },
+  {
+    "player_id": 402,
+    "player_name": "Raphael Onyedika",
+    "team_id": 15,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 403,
+    "player_name": "Wilfred Ndidi",
+    "team_id": 15,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 404,
+    "player_name": "Tochukwu Nnadi",
+    "team_id": 15,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 405,
+    "player_name": "Frank Onyeka",
+    "team_id": 15,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 406,
+    "player_name": "Ebenezer Akinsanmiro",
+    "team_id": 15,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 407,
+    "player_name": "Usman Mohammed",
+    "team_id": 15,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 408,
+    "player_name": "Fisayo Dele-Bashiru",
+    "team_id": 15,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 409,
+    "player_name": "Alex Iwobi",
+    "team_id": 15,
+    "position": "Forward"
+  },
+  {
+    "player_id": 410,
+    "player_name": "Moses Simon",
+    "team_id": 15,
+    "position": "Forward"
+  },
+  {
+    "player_id": 411,
+    "player_name": "Chidera Ejuke",
+    "team_id": 15,
+    "position": "Forward"
+  },
+  {
+    "player_id": 412,
+    "player_name": "Samuel Chukwueze",
+    "team_id": 15,
+    "position": "Forward"
+  },
+  {
+    "player_id": 413,
+    "player_name": "Ademola Lookman",
+    "team_id": 15,
+    "position": "Forward"
+  },
+  {
+    "player_id": 414,
+    "player_name": "Victor Osimhen",
+    "team_id": 15,
+    "position": "Forward"
+  },
+  {
+    "player_id": 415,
+    "player_name": "Akor Adams",
+    "team_id": 15,
+    "position": "Forward"
+  },
+  {
+    "player_id": 416,
+    "player_name": "Paul Onuachu",
+    "team_id": 15,
+    "position": "Forward"
+  },
+  {
+    "player_id": 417,
+    "player_name": "Cyriel Dessers",
+    "team_id": 15,
+    "position": "Forward"
+  },
+  {
+    "player_id": 418,
+    "player_name": "Salim Fago Lawal",
+    "team_id": 15,
+    "position": "Forward"
+  },
+  {
+    "player_id": 419,
+    "player_name": "Djigui Diarra",
+    "team_id": 16,
+    "position": "Goalkeeper"
+  },
+  {
+    "player_id": 420,
+    "player_name": "Ismael Diawara",
+    "team_id": 16,
+    "position": "Goalkeeper"
+  },
+  {
+    "player_id": 421,
+    "player_name": "Mamadou Samassa",
+    "team_id": 16,
+    "position": "Goalkeeper"
+  },
+  {
+    "player_id": 422,
+    "player_name": "Sikou Niakaté",
+    "team_id": 16,
+    "position": "Defender"
+  },
+  {
+    "player_id": 423,
+    "player_name": "Ousmane Camara",
+    "team_id": 16,
+    "position": "Defender"
+  },
+  {
+    "player_id": 424,
+    "player_name": "Mamadou Fofana",
+    "team_id": 16,
+    "position": "Defender"
+  },
+  {
+    "player_id": 425,
+    "player_name": "Nathan Gassama",
+    "team_id": 16,
+    "position": "Defender"
+  },
+  {
+    "player_id": 426,
+    "player_name": "Abdoulaye Diaby",
+    "team_id": 16,
+    "position": "Defender"
+  },
+  {
+    "player_id": 427,
+    "player_name": "Amadou Dante",
+    "team_id": 16,
+    "position": "Defender"
+  },
+  {
+    "player_id": 428,
+    "player_name": "Fodé Doucouré",
+    "team_id": 16,
+    "position": "Defender"
+  },
+  {
+    "player_id": 429,
+    "player_name": "Woyo Coulibaly",
+    "team_id": 16,
+    "position": "Defender"
+  },
+  {
+    "player_id": 430,
+    "player_name": "Hamari Traoré",
+    "team_id": 16,
+    "position": "Defender"
+  },
+  {
+    "player_id": 431,
+    "player_name": "Yves Bissouma",
+    "team_id": 16,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 432,
+    "player_name": "Mohamed Camara",
+    "team_id": 16,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 433,
+    "player_name": "Aliou Dieng",
+    "team_id": 16,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 434,
+    "player_name": "Ibrahima Sissoko",
+    "team_id": 16,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 435,
+    "player_name": "Mamadou Sangaré",
+    "team_id": 16,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 436,
+    "player_name": "Mahamadou Doumbia",
+    "team_id": 16,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 437,
+    "player_name": "Amadou Haidara",
+    "team_id": 16,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 438,
+    "player_name": "Lassana Coulibaly",
+    "team_id": 16,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 439,
+    "player_name": "Kamory Doumbia",
+    "team_id": 16,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 440,
+    "player_name": "Gaoussou Diarra",
+    "team_id": 16,
+    "position": "Forward"
+  },
+  {
+    "player_id": 441,
+    "player_name": "Mamadou Camara",
+    "team_id": 16,
+    "position": "Forward"
+  },
+  {
+    "player_id": 442,
+    "player_name": "Dorgeles Nene",
+    "team_id": 16,
+    "position": "Forward"
+  },
+  {
+    "player_id": 443,
+    "player_name": "El Bilal Touré",
+    "team_id": 16,
+    "position": "Forward"
+  },
+  {
+    "player_id": 444,
+    "player_name": "Lassine Sinayoko",
+    "team_id": 16,
+    "position": "Forward"
+  },
+  {
+    "player_id": 445,
+    "player_name": "Gaoussou Diakité",
+    "team_id": 16,
+    "position": "Forward"
+  },
+  {
+    "player_id": 446,
+    "player_name": "Mamadou Doumbia",
+    "team_id": 16,
+    "position": "Forward"
+  },
+  {
+    "player_id": 447,
+    "player_name": "Lawrence Mulenga",
+    "team_id": 17,
+    "position": "Goalkeeper"
+  },
+  {
+    "player_id": 448,
+    "player_name": "Willard Mwanza",
+    "team_id": 17,
+    "position": "Goalkeeper"
+  },
+  {
+    "player_id": 449,
+    "player_name": "Francis Mwansa",
+    "team_id": 17,
+    "position": "Goalkeeper"
+  },
+  {
+    "player_id": 450,
+    "player_name": "Frankie Musonda",
+    "team_id": 17,
+    "position": "Defender"
+  },
+  {
+    "player_id": 451,
+    "player_name": "Dominic Chanda",
+    "team_id": 17,
+    "position": "Defender"
+  },
+  {
+    "player_id": 452,
+    "player_name": "Gift Prosper Mphande",
+    "team_id": 17,
+    "position": "Defender"
+  },
+  {
+    "player_id": 453,
+    "player_name": "Stoppila Sunzu",
+    "team_id": 17,
+    "position": "Defender"
+  },
+  {
+    "player_id": 454,
+    "player_name": "Kabaso Chongo",
+    "team_id": 17,
+    "position": "Defender"
+  },
+  {
+    "player_id": 455,
+    "player_name": "Lubambo Musonda",
+    "team_id": 17,
+    "position": "Defender"
+  },
+  {
+    "player_id": 456,
+    "player_name": "David Hamansenya",
+    "team_id": 17,
+    "position": "Defender"
+  },
+  {
+    "player_id": 457,
+    "player_name": "Mathews Banda",
+    "team_id": 17,
+    "position": "Defender"
+  },
+  {
+    "player_id": 458,
+    "player_name": "Miguel Chaiwa",
+    "team_id": 17,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 459,
+    "player_name": "Benson Sakala",
+    "team_id": 17,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 460,
+    "player_name": "David Simukonda",
+    "team_id": 17,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 461,
+    "player_name": "Kings Kangwa",
+    "team_id": 17,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 462,
+    "player_name": "Joseph Liteta",
+    "team_id": 17,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 463,
+    "player_name": "Owen Tembo",
+    "team_id": 17,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 464,
+    "player_name": "Wilson Chisala",
+    "team_id": 17,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 465,
+    "player_name": "Obino Chisala",
+    "team_id": 17,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 466,
+    "player_name": "Given Kalusa",
+    "team_id": 17,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 467,
+    "player_name": "Lameck Banda",
+    "team_id": 17,
+    "position": "Forward"
+  },
+  {
+    "player_id": 468,
+    "player_name": "Joseph Sabobo",
+    "team_id": 17,
+    "position": "Forward"
+  },
+  {
+    "player_id": 469,
+    "player_name": "Pascal Phiri",
+    "team_id": 17,
+    "position": "Forward"
+  },
+  {
+    "player_id": 470,
+    "player_name": "Patson Daka",
+    "team_id": 17,
+    "position": "Forward"
+  },
+  {
+    "player_id": 471,
+    "player_name": "Fashion Sakala",
+    "team_id": 17,
+    "position": "Forward"
+  },
+  {
+    "player_id": 472,
+    "player_name": "Jack Lahne",
+    "team_id": 17,
+    "position": "Forward"
+  },
+  {
+    "player_id": 473,
+    "player_name": "Kennedy Musonda",
+    "team_id": 17,
+    "position": "Forward"
+  },
+  {
+    "player_id": 474,
+    "player_name": "Eliya Mandanji",
+    "team_id": 17,
+    "position": "Forward"
+  },
+  {
+    "player_id": 475,
+    "player_name": "Elvis Chipezeze",
+    "team_id": 18,
+    "position": "Goalkeeper"
+  },
+  {
+    "player_id": 476,
+    "player_name": "Martin Mapisa",
+    "team_id": 18,
+    "position": "Goalkeeper"
+  },
+  {
+    "player_id": 477,
+    "player_name": "Washington Arubi",
+    "team_id": 18,
+    "position": "Goalkeeper"
+  },
+  {
+    "player_id": 478,
+    "player_name": "Munashe Garananga",
+    "team_id": 18,
+    "position": "Defender"
+  },
+  {
+    "player_id": 479,
+    "player_name": "Teenage Hadebe",
+    "team_id": 18,
+    "position": "Defender"
+  },
+  {
+    "player_id": 480,
+    "player_name": "Gerald Takwara",
+    "team_id": 18,
+    "position": "Defender"
+  },
+  {
+    "player_id": 481,
+    "player_name": "Brendan Galloway",
+    "team_id": 18,
+    "position": "Defender"
+  },
+  {
+    "player_id": 482,
+    "player_name": "Isheanesu Mauchi",
+    "team_id": 18,
+    "position": "Defender"
+  },
+  {
+    "player_id": 483,
+    "player_name": "Alec Mudimu",
+    "team_id": 18,
+    "position": "Defender"
+  },
+  {
+    "player_id": 484,
+    "player_name": "Divine Lunga",
+    "team_id": 18,
+    "position": "Defender"
+  },
+  {
+    "player_id": 485,
+    "player_name": "Sean Fusire",
+    "team_id": 18,
+    "position": "Defender"
+  },
+  {
+    "player_id": 486,
+    "player_name": "Emmanuel Jalai",
+    "team_id": 18,
+    "position": "Defender"
+  },
+  {
+    "player_id": 487,
+    "player_name": "Godknows Murwira",
+    "team_id": 18,
+    "position": "Defender"
+  },
+  {
+    "player_id": 488,
+    "player_name": "Marvelous Nakamba",
+    "team_id": 18,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 489,
+    "player_name": "Prosper Padera",
+    "team_id": 18,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 490,
+    "player_name": "Andy Rinomhota",
+    "team_id": 18,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 491,
+    "player_name": "Jonah Fabisch",
+    "team_id": 18,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 492,
+    "player_name": "Tawanda Chirewa",
+    "team_id": 18,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 493,
+    "player_name": "Knowledge Musona",
+    "team_id": 18,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 494,
+    "player_name": "Tawanda Maswanhise",
+    "team_id": 18,
+    "position": "Forward"
+  },
+  {
+    "player_id": 495,
+    "player_name": "Bill Antonio",
+    "team_id": 18,
+    "position": "Forward"
+  },
+  {
+    "player_id": 496,
+    "player_name": "Daniel Msendami",
+    "team_id": 18,
+    "position": "Forward"
+  },
+  {
+    "player_id": 497,
+    "player_name": "Ishmael Wadi",
+    "team_id": 18,
+    "position": "Forward"
+  },
+  {
+    "player_id": 498,
+    "player_name": "Tadiwanashe Chakuchichi",
+    "team_id": 18,
+    "position": "Forward"
+  },
+  {
+    "player_id": 499,
+    "player_name": "Prince Dube",
+    "team_id": 18,
+    "position": "Forward"
+  },
+  {
+    "player_id": 500,
+    "player_name": "Macauley Bonne",
+    "team_id": 18,
+    "position": "Forward"
+  },
+  {
+    "player_id": 501,
+    "player_name": "Junior Zindoga",
+    "team_id": 18,
+    "position": "Forward"
+  },
+  {
+    "player_id": 502,
+    "player_name": "Washington Navaya",
+    "team_id": 18,
+    "position": "Forward"
+  },
+  {
+    "player_id": 503,
+    "player_name": "Yannick Pandor",
+    "team_id": 19,
+    "position": "Goalkeeper"
+  },
+  {
+    "player_id": 504,
+    "player_name": "Adel Anzimati-Aboudou",
+    "team_id": 19,
+    "position": "Goalkeeper"
+  },
+  {
+    "player_id": 505,
+    "player_name": "Salim Ben Boina",
+    "team_id": 19,
+    "position": "Goalkeeper"
+  },
+  {
+    "player_id": 506,
+    "player_name": "Kenan Toibibou",
+    "team_id": 19,
+    "position": "Defender"
+  },
+  {
+    "player_id": 507,
+    "player_name": "Ahmed Soilihi",
+    "team_id": 19,
+    "position": "Defender"
+  },
+  {
+    "player_id": 508,
+    "player_name": "Kassim M'Dahoma",
+    "team_id": 19,
+    "position": "Defender"
+  },
+  {
+    "player_id": 509,
+    "player_name": "Idris Mohamed",
+    "team_id": 19,
+    "position": "Defender"
+  },
+  {
+    "player_id": 510,
+    "player_name": "Yannis Kari",
+    "team_id": 19,
+    "position": "Defender"
+  },
+  {
+    "player_id": 511,
+    "player_name": "Ismaël Boura",
+    "team_id": 19,
+    "position": "Defender"
+  },
+  {
+    "player_id": 512,
+    "player_name": "Akim Abdallah",
+    "team_id": 19,
+    "position": "Defender"
+  },
+  {
+    "player_id": 513,
+    "player_name": "Rémy Vita",
+    "team_id": 19,
+    "position": "Defender"
+  },
+  {
+    "player_id": 514,
+    "player_name": "Saïd Bakari",
+    "team_id": 19,
+    "position": "Defender"
+  },
+  {
+    "player_id": 515,
+    "player_name": "Benjaloud Youssouf",
+    "team_id": 19,
+    "position": "Defender"
+  },
+  {
+    "player_id": 516,
+    "player_name": "Yacine Bourhane",
+    "team_id": 19,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 517,
+    "player_name": "Iyad Mohamed",
+    "team_id": 19,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 518,
+    "player_name": "Zaydou Youssouf",
+    "team_id": 19,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 519,
+    "player_name": "Raouf Mroivili",
+    "team_id": 19,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 520,
+    "player_name": "Youssouf M'Changama",
+    "team_id": 19,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 521,
+    "player_name": "Rayan Lutin",
+    "team_id": 19,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 522,
+    "player_name": "Aymeric Ahmed",
+    "team_id": 19,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 523,
+    "player_name": "Rafiki Saïd",
+    "team_id": 19,
+    "position": "Forward"
+  },
+  {
+    "player_id": 524,
+    "player_name": "Faïz Selemani",
+    "team_id": 19,
+    "position": "Forward"
+  },
+  {
+    "player_id": 525,
+    "player_name": "Myziane Maolida",
+    "team_id": 19,
+    "position": "Forward"
+  },
+  {
+    "player_id": 526,
+    "player_name": "Zaïd Amir",
+    "team_id": 19,
+    "position": "Forward"
+  },
+  {
+    "player_id": 527,
+    "player_name": "Aboubacar Ali",
+    "team_id": 19,
+    "position": "Forward"
+  },
+  {
+    "player_id": 528,
+    "player_name": "Mohamed Abooja",
+    "team_id": 20,
+    "position": "Goalkeeper"
+  },
+  {
+    "player_id": 529,
+    "player_name": "Ali Abdallah Abu-Eshrein",
+    "team_id": 20,
+    "position": "Goalkeeper"
+  },
+  {
+    "player_id": 530,
+    "player_name": "Monged Elneel",
+    "team_id": 20,
+    "position": "Goalkeeper"
+  },
+  {
+    "player_id": 531,
+    "player_name": "Mohamed Saeed Ahmed",
+    "team_id": 20,
+    "position": "Defender"
+  },
+  {
+    "player_id": 532,
+    "player_name": "Altayeb Abaker",
+    "team_id": 20,
+    "position": "Defender"
+  },
+  {
+    "player_id": 533,
+    "player_name": "Mustafa Karshom",
+    "team_id": 20,
+    "position": "Defender"
+  },
+  {
+    "player_id": 534,
+    "player_name": "Mohamed Kasri Hakeem",
+    "team_id": 20,
+    "position": "Defender"
+  },
+  {
+    "player_id": 535,
+    "player_name": "Mazin Mohamedein",
+    "team_id": 20,
+    "position": "Defender"
+  },
+  {
+    "player_id": 536,
+    "player_name": "Bakhit Khamis",
+    "team_id": 20,
+    "position": "Defender"
+  },
+  {
+    "player_id": 537,
+    "player_name": "Ahmed Tabanja",
+    "team_id": 20,
+    "position": "Defender"
+  },
+  {
+    "player_id": 538,
+    "player_name": "Sheddy Barglan",
+    "team_id": 20,
+    "position": "Defender"
+  },
+  {
+    "player_id": 539,
+    "player_name": "Yaser Awad Boshara",
+    "team_id": 20,
+    "position": "Defender"
+  },
+  {
+    "player_id": 540,
+    "player_name": "Awad Zaid",
+    "team_id": 20,
+    "position": "Defender"
+  },
+  {
+    "player_id": 541,
+    "player_name": "Salaheldin Adil",
+    "team_id": 20,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 542,
+    "player_name": "Ammar Taifour",
+    "team_id": 20,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 543,
+    "player_name": "Mohamed Abuaagla",
+    "team_id": 20,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 544,
+    "player_name": "Walieldin Khidir",
+    "team_id": 20,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 545,
+    "player_name": "Al-Gozoli Nooh",
+    "team_id": 20,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 546,
+    "player_name": "Abdelrazig Omer",
+    "team_id": 20,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 547,
+    "player_name": "Musa Ali Hussein",
+    "team_id": 20,
+    "position": "Forward"
+  },
+  {
+    "player_id": 548,
+    "player_name": "Abo Eisa",
+    "team_id": 20,
+    "position": "Forward"
+  },
+  {
+    "player_id": 549,
+    "player_name": "Aamir Abdallah",
+    "team_id": 20,
+    "position": "Forward"
+  },
+  {
+    "player_id": 550,
+    "player_name": "Yasir Mozamil",
+    "team_id": 20,
+    "position": "Forward"
+  },
+  {
+    "player_id": 551,
+    "player_name": "Muhamed Tia Asad",
+    "team_id": 20,
+    "position": "Forward"
+  },
+  {
+    "player_id": 552,
+    "player_name": "Mo Eisa",
+    "team_id": 20,
+    "position": "Forward"
+  },
+  {
+    "player_id": 553,
+    "player_name": "Mohamed Abdelrahman",
+    "team_id": 20,
+    "position": "Forward"
+  },
+  {
+    "player_id": 554,
+    "player_name": "John Mano",
+    "team_id": 20,
+    "position": "Forward"
+  },
+  {
+    "player_id": 555,
+    "player_name": "Saturnin Allagbé",
+    "team_id": 21,
+    "position": "Goalkeeper"
+  },
+  {
+    "player_id": 556,
+    "player_name": "Serge Obassa",
+    "team_id": 21,
+    "position": "Goalkeeper"
+  },
+  {
+    "player_id": 557,
+    "player_name": "Marcel Dandjinou",
+    "team_id": 21,
+    "position": "Goalkeeper"
+  },
+  {
+    "player_id": 558,
+    "player_name": "Olivier Verdon",
+    "team_id": 21,
+    "position": "Defender"
+  },
+  {
+    "player_id": 559,
+    "player_name": "Yohan Roche",
+    "team_id": 21,
+    "position": "Defender"
+  },
+  {
+    "player_id": 560,
+    "player_name": "Mohamed Tijani",
+    "team_id": 21,
+    "position": "Defender"
+  },
+  {
+    "player_id": 561,
+    "player_name": "Charlemagne Azongnitode",
+    "team_id": 21,
+    "position": "Defender"
+  },
+  {
+    "player_id": 562,
+    "player_name": "David Kiki",
+    "team_id": 21,
+    "position": "Defender"
+  },
+  {
+    "player_id": 563,
+    "player_name": "Abdoul Rachid Moumini",
+    "team_id": 21,
+    "position": "Defender"
+  },
+  {
+    "player_id": 564,
+    "player_name": "Tamimou Ouorou",
+    "team_id": 21,
+    "position": "Defender"
+  },
+  {
+    "player_id": 565,
+    "player_name": "Rodrigue Fassinou",
+    "team_id": 21,
+    "position": "Defender"
+  },
+  {
+    "player_id": 566,
+    "player_name": "Imourane Hassane",
+    "team_id": 21,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 567,
+    "player_name": "Sessi D'Almeida",
+    "team_id": 21,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 568,
+    "player_name": "Dokou Dodo",
+    "team_id": 21,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 569,
+    "player_name": "Mariano Ahouangbo",
+    "team_id": 21,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 570,
+    "player_name": "Gislain Ahoudo",
+    "team_id": 21,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 571,
+    "player_name": "Rodrigue Kossi Fiogbé",
+    "team_id": 21,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 572,
+    "player_name": "Attidjikou Samadou",
+    "team_id": 21,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 573,
+    "player_name": "Mattéo Ahlinvi",
+    "team_id": 21,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 574,
+    "player_name": "Junior Olaitan",
+    "team_id": 21,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 575,
+    "player_name": "Romaric Amoussou",
+    "team_id": 21,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 576,
+    "player_name": "Razack Rachidou",
+    "team_id": 21,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 577,
+    "player_name": "Rodolfo Aloko",
+    "team_id": 21,
+    "position": "Forward"
+  },
+  {
+    "player_id": 578,
+    "player_name": "Olatoundji Tessilimi",
+    "team_id": 21,
+    "position": "Forward"
+  },
+  {
+    "player_id": 579,
+    "player_name": "Jodel Dossou",
+    "team_id": 21,
+    "position": "Forward"
+  },
+  {
+    "player_id": 580,
+    "player_name": "Aiyegun Tosin",
+    "team_id": 21,
+    "position": "Forward"
+  },
+  {
+    "player_id": 581,
+    "player_name": "Steve Mounié",
+    "team_id": 21,
+    "position": "Forward"
+  },
+  {
+    "player_id": 582,
+    "player_name": "Adam Akimey",
+    "team_id": 21,
+    "position": "Forward"
+  },
+  {
+    "player_id": 583,
+    "player_name": "Yakoub Suleiman Ali",
+    "team_id": 22,
+    "position": "Goalkeeper"
+  },
+  {
+    "player_id": 584,
+    "player_name": "Hussein Masalanga",
+    "team_id": 22,
+    "position": "Goalkeeper"
+  },
+  {
+    "player_id": 585,
+    "player_name": "Zuberi Foba",
+    "team_id": 22,
+    "position": "Goalkeeper"
+  },
+  {
+    "player_id": 586,
+    "player_name": "Ibrahim Hamad",
+    "team_id": 22,
+    "position": "Defender"
+  },
+  {
+    "player_id": 587,
+    "player_name": "Dickson Job",
+    "team_id": 22,
+    "position": "Defender"
+  },
+  {
+    "player_id": 588,
+    "player_name": "Lusajo Mwaikenda",
+    "team_id": 22,
+    "position": "Defender"
+  },
+  {
+    "player_id": 589,
+    "player_name": "Bakari Mwamnyeto",
+    "team_id": 22,
+    "position": "Defender"
+  },
+  {
+    "player_id": 590,
+    "player_name": "Wilson Nangu",
+    "team_id": 22,
+    "position": "Defender"
+  },
+  {
+    "player_id": 591,
+    "player_name": "Mohamed Hussein",
+    "team_id": 22,
+    "position": "Defender"
+  },
+  {
+    "player_id": 592,
+    "player_name": "Pascal Msindo",
+    "team_id": 22,
+    "position": "Defender"
+  },
+  {
+    "player_id": 593,
+    "player_name": "Nickson Kibabage",
+    "team_id": 22,
+    "position": "Defender"
+  },
+  {
+    "player_id": 594,
+    "player_name": "Shomari Kapombe",
+    "team_id": 22,
+    "position": "Defender"
+  },
+  {
+    "player_id": 595,
+    "player_name": "Novatus Miroshi",
+    "team_id": 22,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 596,
+    "player_name": "Alphonce Msanga",
+    "team_id": 22,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 597,
+    "player_name": "Yusuph Kagoma",
+    "team_id": 22,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 598,
+    "player_name": "Khalid Habibu",
+    "team_id": 22,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 599,
+    "player_name": "Kelvin Nashon",
+    "team_id": 22,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 600,
+    "player_name": "Charles M'Mombwa",
+    "team_id": 22,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 601,
+    "player_name": "Feisal Salum",
+    "team_id": 22,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 602,
+    "player_name": "Haji Mnoga",
+    "team_id": 22,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 603,
+    "player_name": "Morice Abraham",
+    "team_id": 22,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 604,
+    "player_name": "Denis Kibu",
+    "team_id": 22,
+    "position": "Forward"
+  },
+  {
+    "player_id": 605,
+    "player_name": "Iddy Seleman Nado",
+    "team_id": 22,
+    "position": "Forward"
+  },
+  {
+    "player_id": 606,
+    "player_name": "Tarryn Allarakhia",
+    "team_id": 22,
+    "position": "Forward"
+  },
+  {
+    "player_id": 607,
+    "player_name": "Ally Samatta",
+    "team_id": 22,
+    "position": "Forward"
+  },
+  {
+    "player_id": 608,
+    "player_name": "Kelvin John",
+    "team_id": 22,
+    "position": "Forward"
+  },
+  {
+    "player_id": 609,
+    "player_name": "Simon Msuva",
+    "team_id": 22,
+    "position": "Forward"
+  },
+  {
+    "player_id": 610,
+    "player_name": "Selemani Mwalimu",
+    "team_id": 22,
+    "position": "Forward"
+  },
+  {
+    "player_id": 611,
+    "player_name": "Kabelo Dambe",
+    "team_id": 23,
+    "position": "Goalkeeper"
+  },
+  {
+    "player_id": 612,
+    "player_name": "Goitseone Phoko",
+    "team_id": 23,
+    "position": "Goalkeeper"
+  },
+  {
+    "player_id": 613,
+    "player_name": "Keoagile Kgosipula",
+    "team_id": 23,
+    "position": "Goalkeeper"
+  },
+  {
+    "player_id": 614,
+    "player_name": "Thatayaone Ditlhokwe",
+    "team_id": 23,
+    "position": "Defender"
+  },
+  {
+    "player_id": 615,
+    "player_name": "Mosha Gaolaolwe",
+    "team_id": 23,
+    "position": "Defender"
+  },
+  {
+    "player_id": 616,
+    "player_name": "Tebogo Kopelang",
+    "team_id": 23,
+    "position": "Defender"
+  },
+  {
+    "player_id": 617,
+    "player_name": "Alford Velaphi",
+    "team_id": 23,
+    "position": "Defender"
+  },
+  {
+    "player_id": 618,
+    "player_name": "Shanganani Nganda",
+    "team_id": 23,
+    "position": "Defender"
+  },
+  {
+    "player_id": 619,
+    "player_name": "Mothusi Johnson",
+    "team_id": 23,
+    "position": "Defender"
+  },
+  {
+    "player_id": 620,
+    "player_name": "Chicco Molefe",
+    "team_id": 23,
+    "position": "Defender"
+  },
+  {
+    "player_id": 621,
+    "player_name": "Thabo Leinanyane",
+    "team_id": 23,
+    "position": "Defender"
+  },
+  {
+    "player_id": 622,
+    "player_name": "Gape Edwin Mohutsiwa",
+    "team_id": 23,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 623,
+    "player_name": "Lebogang Ditsile",
+    "team_id": 23,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 624,
+    "player_name": "Olebogeng Ramotse",
+    "team_id": 23,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 625,
+    "player_name": "Mothusi Cooper",
+    "team_id": 23,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 626,
+    "player_name": "Segolame Boy",
+    "team_id": 23,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 627,
+    "player_name": "Godiraone Modingwane",
+    "team_id": 23,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 628,
+    "player_name": "Thatayaone Kgamanyane",
+    "team_id": 23,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 629,
+    "player_name": "Gilbert Baruti",
+    "team_id": 23,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 630,
+    "player_name": "Monty Enosa",
+    "team_id": 23,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 631,
+    "player_name": "Kabelo Seakanyeng",
+    "team_id": 23,
+    "position": "Forward"
+  },
+  {
+    "player_id": 632,
+    "player_name": "Thabang Sesinyi",
+    "team_id": 23,
+    "position": "Forward"
+  },
+  {
+    "player_id": 633,
+    "player_name": "Tumisang Orebonye",
+    "team_id": 23,
+    "position": "Forward"
+  },
+  {
+    "player_id": 634,
+    "player_name": "Omaatla Kebatho",
+    "team_id": 23,
+    "position": "Forward"
+  },
+  {
+    "player_id": 635,
+    "player_name": "Thabo Maponda",
+    "team_id": 23,
+    "position": "Forward"
+  },
+  {
+    "player_id": 636,
+    "player_name": "Losika Ratshukudu",
+    "team_id": 23,
+    "position": "Forward"
+  },
+  {
+    "player_id": 637,
+    "player_name": "Ernan Siluane",
+    "team_id": 24,
+    "position": "Goalkeeper"
+  },
+  {
+    "player_id": 638,
+    "player_name": "Ivane Urrubal",
+    "team_id": 24,
+    "position": "Goalkeeper"
+  },
+  {
+    "player_id": 639,
+    "player_name": "Kimiss Zavala",
+    "team_id": 24,
+    "position": "Goalkeeper"
+  },
+  {
+    "player_id": 640,
+    "player_name": "Edmilson Dove",
+    "team_id": 24,
+    "position": "Defender"
+  },
+  {
+    "player_id": 641,
+    "player_name": "Feliciano Jone",
+    "team_id": 24,
+    "position": "Defender"
+  },
+  {
+    "player_id": 642,
+    "player_name": "Mexer",
+    "team_id": 24,
+    "position": "Defender"
+  },
+  {
+    "player_id": 643,
+    "player_name": "Fernando Chamboco",
+    "team_id": 24,
+    "position": "Defender"
+  },
+  {
+    "player_id": 644,
+    "player_name": "Reinildo Mandava",
+    "team_id": 24,
+    "position": "Defender"
+  },
+  {
+    "player_id": 645,
+    "player_name": "Bruno Langa",
+    "team_id": 24,
+    "position": "Defender"
+  },
+  {
+    "player_id": 646,
+    "player_name": "Diogo Calila",
+    "team_id": 24,
+    "position": "Defender"
+  },
+  {
+    "player_id": 647,
+    "player_name": "Infren Matola",
+    "team_id": 24,
+    "position": "Defender"
+  },
+  {
+    "player_id": 648,
+    "player_name": "Oscar Cherene",
+    "team_id": 24,
+    "position": "Defender"
+  },
+  {
+    "player_id": 649,
+    "player_name": "Ricardo Guimarães",
+    "team_id": 24,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 650,
+    "player_name": "Alfonso Amade",
+    "team_id": 24,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 651,
+    "player_name": "Manuel Kambala",
+    "team_id": 24,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 652,
+    "player_name": "Shaquille",
+    "team_id": 24,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 653,
+    "player_name": "Keyns Abdala",
+    "team_id": 24,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 654,
+    "player_name": "Geny Catamo",
+    "team_id": 24,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 655,
+    "player_name": "João Bonde",
+    "team_id": 24,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 656,
+    "player_name": "Elias Pelembe",
+    "team_id": 24,
+    "position": "Midfielder"
+  },
+  {
+    "player_id": 657,
+    "player_name": "Witiness Quembo",
+    "team_id": 24,
+    "position": "Forward"
+  },
+  {
+    "player_id": 658,
+    "player_name": "Clésio Baúque",
+    "team_id": 24,
+    "position": "Forward"
+  },
+  {
+    "player_id": 659,
+    "player_name": "Gildo Vilanculos",
+    "team_id": 24,
+    "position": "Forward"
+  },
+  {
+    "player_id": 660,
+    "player_name": "Ângelo Tomás Cantolo",
+    "team_id": 24,
+    "position": "Forward"
+  },
+  {
+    "player_id": 661,
+    "player_name": "Stanley Ratifo",
+    "team_id": 24,
+    "position": "Forward"
+  },
+  {
+    "player_id": 662,
+    "player_name": "Chamito Alfandega",
+    "team_id": 24,
+    "position": "Forward"
+  },
+  {
+    "player_id": 663,
+    "player_name": "Faisal Bangal",
+    "team_id": 24,
+    "position": "Forward"
+  },
+  {
+    "player_id": 664,
+    "player_name": "Melque Alexandre",
+    "team_id": 24,
+    "position": "Forward"
+  }
+]

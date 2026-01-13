@@ -1,0 +1,74 @@
+[
+  {
+    "venue_id": 1,
+    "venue_name": "Adrar Stadium",
+    "city": "Agadir",
+    "capacity": 45480,
+    "latitude": 30.4272,
+    "longitude": -9.5404
+  },
+  {
+    "venue_id": 2,
+    "venue_name": "Stade Mohammed V",
+    "city": "Casablanca",
+    "capacity": 45000,
+    "latitude": 33.5829,
+    "longitude": -7.6468
+  },
+  {
+    "venue_id": 3,
+    "venue_name": "Fez Stadium",
+    "city": "Fez",
+    "capacity": 45000,
+    "latitude": 34.0028,
+    "longitude": -4.9689
+  },
+  {
+    "venue_id": 4,
+    "venue_name": "Marrakesh Stadium",
+    "city": "Marrakesh",
+    "capacity": 45240,
+    "latitude": 31.707,
+    "longitude": -7.9804
+  },
+  {
+    "venue_id": 5,
+    "venue_name": "Prince Moulay Abdellah Stadium",
+    "city": "Rabat",
+    "capacity": 69500,
+    "latitude": 33.9598,
+    "longitude": -6.8891
+  },
+  {
+    "venue_id": 6,
+    "venue_name": "Moulay Hassan Stadium",
+    "city": "Rabat",
+    "capacity": 22000,
+    "latitude": 33.9757,
+    "longitude": -6.8242
+  },
+  {
+    "venue_id": 7,
+    "venue_name": "Rabat Olympic Stadium",
+    "city": "Rabat",
+    "capacity": 21000,
+    "latitude": 33.9571,
+    "longitude": -6.8912
+  },
+  {
+    "venue_id": 8,
+    "venue_name": "Al Medina Stadium",
+    "city": "Rabat",
+    "capacity": 18000,
+    "latitude": 34.0053,
+    "longitude": -6.8454
+  },
+  {
+    "venue_id": 9,
+    "venue_name": "Tangier Grand Stadium",
+    "city": "Tangier",
+    "capacity": 75500,
+    "latitude": 35.7806,
+    "longitude": -5.8111
+  }
+]

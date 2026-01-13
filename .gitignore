@@ -7,7 +7,7 @@ venv/
 extraction.log
 
 # Data
-data/
+
 tables/
 # Python
 __pycache__/
@@ -16,4 +16,3 @@ __pycache__/
 GEMINI.md
 node_modules/
 
-logos/

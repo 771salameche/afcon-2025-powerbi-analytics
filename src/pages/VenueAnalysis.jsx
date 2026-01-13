@@ -49,7 +49,7 @@ const VenueAnalysis = () => {
 
   return (
     <div className="space-y-6">
-      <h1 className="text-3xl font-bold text-gray-800 dark:text-gray-100 mb-6">Venue Analysis</h1>
+      <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-800 dark:text-gray-100 mb-6">Venue Analysis</h1>
 
       <div className="bg-white dark:bg-gray-800 p-4 rounded-lg shadow-md mb-6">
         <VenueFilter />
@@ -63,9 +63,9 @@ const VenueAnalysis = () => {
         <div className="space-y-6">
           {/* Venue Header */}
           <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-6">
-            {selectedVenueData.image_url && <img src={selectedVenueData.image_url} alt={selectedVenueData.venue_name} className="w-32 h-32 object-cover rounded-lg shadow-lg" />}
+            {selectedVenueData.image_url && <img src={selectedVenueData.image_url} alt={selectedVenueData.venue_name} className="w-24 h-24 md:w-32 md:h-32 object-cover rounded-lg shadow-lg" />}
             <div>
-              <h2 className="text-4xl font-extrabold text-gray-900 dark:text-white mb-2">{selectedVenueData.venue_name}</h2>
+              <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 dark:text-white mb-2">{selectedVenueData.venue_name}</h2>
               <p className="text-lg text-gray-600 dark:text-gray-300">{selectedVenueData.city}, {selectedVenueData.country}</p>
               <p className="text-md text-gray-500 dark:text-gray-400">Capacity: {selectedVenueData.capacity.toLocaleString()}</p>
             </div>
@@ -86,14 +86,14 @@ const VenueAnalysis = () => {
 
           {/* Morocco Map with Markers - Placeholder */}
           <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md h-96 flex items-center justify-center">
-            <p className="text-gray-500">Morocco Map with Venue Markers - Placeholder</p>
+            <h2 className="text-xl md:text-2xl font-bold text-gray-800 dark:text-gray-100 mb-4">Morocco Map with Venue Markers - Placeholder</h2>
           </div>
 
           {/* Charts - Placeholders */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
             <VenueBarChart />
             <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md h-96 flex items-center justify-center">
-              <p className="text-gray-500">Attendance Trend (Line Chart) - Placeholder</p>
+              <h2 className="text-xl md:text-2xl font-bold text-gray-800 dark:text-gray-100 mb-4">Attendance Trend (Line Chart) - Placeholder</h2>
             </div>
           </div>
         </div>

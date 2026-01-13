@@ -30,18 +30,18 @@ const KPICard = ({ title, value, icon, trend, subtitle }) => {
   return (
     <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 flex flex-col justify-between hover:shadow-lg transition-shadow duration-300 ease-in-out">
       <div className="flex items-center justify-between mb-4">
-        <h3 className="text-lg font-semibold text-gray-700 dark:text-gray-200">{title}</h3>
+        <h3 className="text-base md:text-lg font-semibold text-gray-700 dark:text-gray-200">{title}</h3>
         {icon && <div className="text-gray-400 dark:text-gray-500 text-2xl">{icon}</div>}
       </div>
       <div className="flex items-baseline mb-2">
-        <p className="text-4xl font-bold text-gray-900 dark:text-white mr-2">{value}</p>
+        <p className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mr-2">{value}</p>
         {trend && (
-          <span className={`text-sm font-medium ${getTrendColor(trend)} flex items-center`}>
+          <span className={`text-xs md:text-sm font-medium ${getTrendColor(trend)} flex items-center`}>
             {getTrendIcon(trend)}
           </span>
         )}
       </div>
-      {subtitle && <p className="text-sm text-gray-500 dark:text-gray-400">{subtitle}</p>}
+      {subtitle && <p className="text-xs md:text-sm text-gray-500 dark:text-gray-400">{subtitle}</p>}
     </div>
   );
 };

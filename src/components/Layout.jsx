@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { Outlet } from 'react-router-dom';
+import { Outlet, useLocation } from 'react-router-dom'; // Import useLocation
+import { motion, AnimatePresence } from 'framer-motion'; // Import motion and AnimatePresence
 import Header from './Header';
 import Sidebar from './Sidebar';
 import Footer from './Footer';
@@ -9,6 +10,7 @@ import Loader from './common/Loader';
 const Layout = () => {
   const [isSidebarOpen, setSidebarOpen] = useState(false);
   const { loading, error } = useTournament();
+  const location = useLocation(); // Get current location for AnimatePresence key
 
   const toggleSidebar = () => {
     setSidebarOpen(!isSidebarOpen);
@@ -33,7 +35,18 @@ const Layout = () => {
       <div className="flex flex-1">
         <Sidebar isOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
         <main className="flex-1 p-4 lg:p-6 bg-gray-100 dark:bg-gray-800">
-          <Outlet />
+          <AnimatePresence mode="wait">
+            <motion.div
+              key={location.pathname} // Unique key for each route
+              initial={{ opacity: 0, x: 20 }} // Initial state (fade in from right)
+              animate={{ opacity: 1, x: 0 }}   // Animate to (fully visible, no slide)
+              exit={{ opacity: 0, x: -20 }}   // Exit state (fade out to left)
+              transition={{ duration: 0.2 }}   // Animation duration
+              className="w-full h-full" // Ensure div takes full space
+            >
+              <Outlet />
+            </motion.div>
+          </AnimatePresence>
         </main>
       </div>
       <Footer />

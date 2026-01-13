@@ -76,11 +76,11 @@ const TeamPerformance = () => {
 
   return (
     <div className="space-y-6">
-      <h1 className="text-3xl font-bold text-gray-800 dark:text-gray-100 mb-6">Team Performance</h1>
+      <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-800 dark:text-gray-100 mb-6">Team Performance</h1>
 
       <div className="bg-white dark:bg-gray-800 p-4 rounded-lg shadow-md mb-6">
         {/* Use a custom TeamSelector that enforces single selection */}
-        <p className="text-lg font-semibold mb-2">Select Team</p>
+        <p className="text-base md:text-lg font-semibold mb-2">Select Team</p>
         <TeamSelector multiSelect={false} selectedTeams={selectedTeams} setSelectedTeams={handleTeamSelectionChange} />
       </div>
 
@@ -92,7 +92,7 @@ const TeamPerformance = () => {
         <div className="space-y-6">
           {/* Team Header */}
           <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md flex items-center space-x-6">
-            {selectedTeam.team_logo_url && <img src={selectedTeam.team_logo_url} alt={selectedTeam.team_name} className="w-24 h-24 object-contain" />}
+            {selectedTeam.team_logo_url && <img src={selectedTeam.team_logo_url} alt={selectedTeam.team_name} className="w-16 h-16 md:w-24 md:h-24 object-contain" />}
             <div>
               <h2 className="text-4xl font-extrabold text-gray-900 dark:text-white">{selectedTeam.team_name}</h2>
               <p className="text-lg text-gray-600 dark:text-gray-300">Group: {selectedTeam.group}</p>
@@ -124,7 +124,7 @@ const TeamPerformance = () => {
 
           {/* Match History Timeline */}
           <div>
-            <h2 className="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-4">Match History</h2>
+            <h2 className="text-xl md:text-2xl font-bold text-gray-800 dark:text-gray-100 mb-4">Match History</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
               {teamMatches.length > 0 ? (
                 teamMatches.map(match => (

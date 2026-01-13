@@ -57,18 +57,18 @@ const VenueBarChart = () => {
 
   const colors = useMemo(() => generateColors(chartData.length), [chartData.length]);
 
-  if (loading) return <div className="flex items-center justify-center h-full text-gray-500 dark:text-gray-400"><p>Loading venue chart data...</p></div>;
+  if (loading) return <div className="flex items-center justify-center h-full text-gray-500 dark:text-gray-400"><p className="text-sm md:text-base">Loading venue chart data...</p></div>;
   if (chartData.length === 0) {
     return (
       <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md h-96 flex items-center justify-center">
-        <p className="text-gray-500 dark:text-gray-400">No data available for matches by venue.</p>
+        <p className="text-gray-500 dark:text-gray-400 text-sm md:text-base">No data available for matches by venue.</p>
       </div>
     );
   }
 
   return (
     <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
-      <h3 className="text-xl font-bold text-gray-800 dark:text-gray-100 mb-4">Matches by Venue</h3>
+      <h3 className="text-lg md:text-xl font-bold text-gray-800 dark:text-gray-100 mb-4">Matches by Venue</h3>
       <ResponsiveContainer width="100%" height={isMobile ? Math.max(300, chartData.length * 50) : 300}>
         <BarChart
           data={chartData}

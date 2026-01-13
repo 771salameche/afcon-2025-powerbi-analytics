@@ -55,7 +55,7 @@ const TournamentOverview = () => {
   return (
     <div className="space-y-6">
       <div className="flex justify-between items-center">
-        <h1 className="text-3xl font-bold text-gray-800 dark:text-gray-100">AFCON 2025 - Tournament Overview</h1>
+        <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-800 dark:text-gray-100">AFCON 2025 - Tournament Overview</h1>
       </div>
 
       {/* Filter Section */}
@@ -84,13 +84,13 @@ const TournamentOverview = () => {
 
       {/* Recent Matches Section */}
       <div>
-        <h2 className="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-4">Recent Matches</h2>
+        <h2 className="text-xl md:text-2xl font-bold text-gray-800 dark:text-gray-100 mb-4">Recent Matches</h2>
         <RecentMatchesList />
       </div>
 
       {/* Group Standings Section */}
       <div>
-        <h2 className="text-2xl font-bold text-gray-800 dark:text-gray-100 mb-4">Group Standings</h2>
+        <h2 className="text-xl md:text-2xl font-bold text-gray-800 dark:text-gray-100 mb-4">Group Standings</h2>
         <StandingsTable standings={groupStandings} />
       </div>
     </div>

@@ -50,7 +50,7 @@ const GoalsTrendChart = ({ fixtures }) => {
 
   return (
     <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
-      <h3 className="text-xl font-bold text-gray-800 dark:text-gray-100 mb-4">Goals Scored Over Tournament</h3>
+      <h3 className="text-lg md:text-xl font-bold text-gray-800 dark:text-gray-100 mb-4">Goals Scored Over Tournament</h3>
       <ResponsiveContainer width="100%" height={300}>
         <LineChart
           data={chartData}

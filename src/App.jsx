@@ -8,28 +8,31 @@ import PlayerStats from './pages/PlayerStats';
 import { TournamentProvider } from './contexts/TournamentContext';
 import { FilterProvider } from './contexts/FilterContext';
 import { StatisticsProvider } from './contexts/StatisticsContext';
+import { ThemeProvider } from './contexts/ThemeContext'; // Import ThemeProvider
 import ErrorBoundary from './components/common/ErrorBoundary';
 
 function App() {
   return (
-    <FilterProvider>
-      <TournamentProvider>
-        <StatisticsProvider>
-          <ErrorBoundary>
-            <Router>
-              <Routes>
-                <Route path="/" element={<Layout />}>
-                  <Route index element={<TournamentOverview />} />
-                  <Route path="teams" element={<TeamPerformance />} />
-                  <Route path="venues" element={<VenueAnalysis />} />
-                  <Route path="players" element={<PlayerStats />} />
-                </Route>
-              </Routes>
-            </Router>
-          </ErrorBoundary>
-        </StatisticsProvider>
-      </TournamentProvider>
-    </FilterProvider>
+    <ThemeProvider>
+      <FilterProvider>
+        <TournamentProvider>
+          <StatisticsProvider>
+            <ErrorBoundary>
+              <Router>
+                <Routes>
+                  <Route path="/" element={<Layout />}>
+                    <Route index element={<TournamentOverview />} />
+                    <Route path="teams" element={<TeamPerformance />} />
+                    <Route path="venues" element={<VenueAnalysis />} />
+                    <Route path="players" element={<PlayerStats />} />
+                  </Route>
+                </Routes>
+              </Router>
+            </ErrorBoundary>
+          </StatisticsProvider>
+        </TournamentProvider>
+      </FilterProvider>
+    </ThemeProvider>
   );
 }
 

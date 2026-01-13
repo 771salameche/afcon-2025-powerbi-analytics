@@ -19,13 +19,13 @@ const CustomTooltip = ({ active, payload }) => {
     const data = payload[0].payload;
     return (
       <div className="bg-white dark:bg-gray-700 p-3 border border-gray-300 dark:border-gray-600 rounded-lg shadow-md text-gray-800 dark:text-gray-200">
-        <p className="font-bold text-lg">{data.teamName}</p>
-        <p>Goals For: {data.goalsFor}</p>
-        <p>Goals Against: {data.goalsAgainst}</p>
-        <p>Wins: {data.wins}</p>
-        <p>Losses: {data.losses}</p>
-        <p>Draws: {data.draws}</p>
-        <p>Points: {data.points}</p>
+        <p className="font-bold text-base md:text-lg">{data.teamName}</p>
+        <p className="text-sm md:text-base">Goals For: {data.goalsFor}</p>
+        <p className="text-sm md:text-base">Goals Against: {data.goalsAgainst}</p>
+        <p className="text-sm md:text-base">Wins: {data.wins}</p>
+        <p className="text-sm md:text-base">Losses: {data.losses}</p>
+        <p className="text-sm md:text-base">Draws: {data.draws}</p>
+        <p className="text-sm md:text-base">Points: {data.points}</p>
       </div>
     );
   }
@@ -74,18 +74,18 @@ const TeamComparisonChart = () => {
   }, [chartData]);
 
 
-  if (loading) return <div className="flex items-center justify-center h-full text-gray-500 dark:text-gray-400"><p>Loading team comparison data...</p></div>;
+  if (loading) return <div className="flex items-center justify-center h-full text-gray-500 dark:text-gray-400"><p className="text-sm md:text-base">Loading team comparison data...</p></div>;
   if (chartData.length === 0) {
     return (
       <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md h-96 flex items-center justify-center">
-        <p className="text-gray-500 dark:text-gray-400">Not enough data to compare teams (Goals For vs. Goals Against).</p>
+        <p className="text-gray-500 dark:text-gray-400 text-sm md:text-base">Not enough data to compare teams (Goals For vs. Goals Against).</p>
       </div>
     );
   }
 
   return (
     <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
-      <h3 className="text-xl font-bold text-gray-800 dark:text-gray-100 mb-4">Team Performance Comparison (Goals For vs. Goals Against)</h3>
+      <h3 className="text-lg md:text-xl font-bold text-gray-800 dark:text-gray-100 mb-4">Team Performance Comparison (Goals For vs. Goals Against)</h3>
       <ResponsiveContainer width="100%" height={400}>
         <ScatterChart
           margin={{

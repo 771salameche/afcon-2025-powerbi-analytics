@@ -58,6 +58,8 @@ const TeamLogo = ({ teamName, size = 'md' }) => {
         return 'w-12 h-12'; // 48x48px
       case 'xl':
         return 'w-16 h-16'; // 64x64px
+      case 'xxl':
+        return 'w-32 h-32'; // 128x128px
       default:
         return 'w-8 h-8';
     }

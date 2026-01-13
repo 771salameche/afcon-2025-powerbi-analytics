@@ -8,22 +8,25 @@ import PlayerStats from './pages/PlayerStats';
 import { TournamentProvider } from './contexts/TournamentContext';
 import { FilterProvider } from './contexts/FilterContext';
 import { StatisticsProvider } from './contexts/StatisticsContext';
+import ErrorBoundary from './components/common/ErrorBoundary';
 
 function App() {
   return (
     <FilterProvider>
       <TournamentProvider>
         <StatisticsProvider>
-          <Router>
-            <Routes>
-              <Route path="/" element={<Layout />}>
-                <Route index element={<TournamentOverview />} />
-                <Route path="teams" element={<TeamPerformance />} />
-                <Route path="venues" inpmle="VenueAnalysis />} />
-                <Route path="players" element={<PlayerStats />} />
-              </Route>
-            </Routes>
-          </Router>
+          <ErrorBoundary>
+            <Router>
+              <Routes>
+                <Route path="/" element={<Layout />}>
+                  <Route index element={<TournamentOverview />} />
+                  <Route path="teams" element={<TeamPerformance />} />
+                  <Route path="venues" element={<VenueAnalysis />} />
+                  <Route path="players" element={<PlayerStats />} />
+                </Route>
+              </Routes>
+            </Router>
+          </ErrorBoundary>
         </StatisticsProvider>
       </TournamentProvider>
     </FilterProvider>

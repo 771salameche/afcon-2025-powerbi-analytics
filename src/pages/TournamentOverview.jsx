@@ -1,4 +1,4 @@
-import React, { useMemo } from 'react';
+import React, { useMemo, Suspense, lazy } from 'react';
 import { useTournament } from '../contexts/TournamentContext';
 import { useStatistics } from '../contexts/StatisticsContext';
 import { useFilters } from '../contexts/FilterContext';
@@ -6,9 +6,7 @@ import BrandedKPICard from '../components/common/BrandedKPICard';
 import Loader from '../components/common/Loader';
 import StageFilter from '../components/filters/StageFilter';
 import DateRangeFilter from '../components/filters/DateRangeFilter';
-import GoalsTrendChart from '../components/charts/GoalsTrendChart';
 import RecentMatchesList from '../components/common/RecentMatchesList';
-import StandingsTable from '../components/charts/StandingsTable';
 import HeroSection from '../components/layout/HeroSection';
 import { getRandomPattern, PatternBackground } from '../utils/patternHelpers.jsx';
 
@@ -17,6 +15,9 @@ import KPICardSkeleton from '../components/skeletons/KPICardSkeleton';
 import MatchCardSkeleton from '../components/skeletons/MatchCardSkeleton';
 import TableSkeleton from '../components/skeletons/TableSkeleton';
 import ChartSkeleton from '../components/skeletons/ChartSkeleton';
+
+const GoalsTrendChart = lazy(() => import('../components/charts/GoalsTrendChart'));
+const StandingsTable = lazy(() => import('../components/charts/StandingsTable'));
 
 const TournamentOverview = () => {
   const { loading: tournamentLoading, error, stages } = useTournament();
@@ -92,19 +93,12 @@ const TournamentOverview = () => {
 
       {/* Charts Section */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-        {loading ? (
-          <>
-            <ChartSkeleton />
-            <ChartSkeleton />
-          </>
-        ) : (
-          <>
-            <GoalsTrendChart fixtures={filteredFixtures} />
-            <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md h-96 flex items-center justify-center">
-              <h2 className="text-xl md:text-2xl font-bold text-gray-500 dark:text-gray-400 font-body mb-4">Fixtures by Venue (Map) - Placeholder</h2>
-            </div>
-          </>
-        )}
+        <Suspense fallback={<ChartSkeleton />}>
+          <GoalsTrendChart fixtures={filteredFixtures} />
+        </Suspense>
+        <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md h-96 flex items-center justify-center">
+          <h2 className="text-xl md:text-2xl font-bold text-gray-500 dark:text-gray-400 font-body mb-4">Fixtures by Venue (Map) - Placeholder</h2>
+        </div>
       </div>
 
       {/* Recent Matches Section */}
@@ -122,11 +116,9 @@ const TournamentOverview = () => {
       {/* Group Standings Section */}
       <PatternBackground pattern={getRandomPattern()} opacity={0.15} className="p-6 rounded-lg shadow-md">
         <h2 className="text-xl md:text-2xl font-bold text-gray-800 dark:text-gray-100 mb-4">Group Standings</h2>
-        {loading ? (
-          <TableSkeleton />
-        ) : (
+        <Suspense fallback={<TableSkeleton />}>
           <StandingsTable standings={groupStandings} />
-        )}
+        </Suspense>
       </PatternBackground>
     </div>
   );

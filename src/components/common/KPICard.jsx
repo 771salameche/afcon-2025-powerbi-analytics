@@ -4,9 +4,9 @@ const KPICard = ({ title, value, icon, trend, subtitle }) => {
   const getTrendColor = (trend) => {
     switch (trend) {
       case 'up':
-        return 'text-green-500';
+        return 'text-secondary-gold';
       case 'down':
-        return 'text-red-500';
+        return 'text-secondary-red';
       case 'neutral':
         return 'text-gray-500';
       default:

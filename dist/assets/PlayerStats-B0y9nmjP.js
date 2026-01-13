@@ -1,0 +1,1 @@
+import{j as s}from"./index-BEKOxIM-.js";const a=()=>s.jsxs("div",{className:"p-4",children:[s.jsx("h1",{className:"text-2xl font-bold",children:"Player Stats"}),s.jsx("p",{children:"Discover player statistics and performance data."})]});export{a as default};

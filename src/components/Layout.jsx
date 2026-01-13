@@ -9,7 +9,7 @@ import Loader from './common/Loader';
 
 const Layout = () => {
   const [isSidebarOpen, setSidebarOpen] = useState(false);
-  const { loading, error } = useTournament();
+  const { loading, error, loadingMessage } = useTournament(); // Get loadingMessage
   const location = useLocation(); // Get current location for AnimatePresence key
 
   const toggleSidebar = () => {
@@ -17,7 +17,7 @@ const Layout = () => {
   };
 
   if (loading) {
-    return <Loader message="Loading tournament data..." />;
+    return <Loader message={loadingMessage} />; // Pass loadingMessage to Loader
   }
 
   if (error) {

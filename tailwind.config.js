@@ -7,6 +7,9 @@ export default {
   darkMode: 'class', // Enable dark mode based on 'dark' class in html
   theme: {
     extend: {
+      screens: {
+        'xs': { 'max': '375px' },
+      },
       colors: {
         'primary-maroon': '#800000',
         'primary-teal': '#07A88F',

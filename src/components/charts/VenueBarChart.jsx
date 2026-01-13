@@ -1,4 +1,4 @@
-import React, { useMemo, useState, useEffect } from 'react';
+import React, { useMemo } from 'react';
 import {
   BarChart,
   Bar,
@@ -11,6 +11,7 @@ import {
 } from 'recharts';
 import { useTournament } from '../../contexts/TournamentContext';
 import { useStatistics } from '../../contexts/StatisticsContext';
+import useBreakpoint from '../../hooks/useBreakpoint';
 
 // Function to generate distinct colors using brand palette
 const getBrandColors = () => {
@@ -26,16 +27,7 @@ const getBrandColors = () => {
 const VenueBarChart = () => {
   const { venues, loading: tourLoading } = useTournament();
   const { filteredFixtures, loading: statsLoading } = useStatistics();
-  const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth <= 768); // Tailwind's md breakpoint
-    };
-    window.addEventListener('resize', handleResize);
-    handleResize(); // Set initial value
-    return () => window.removeEventListener('resize', handleResize);
-  }, []);
+  const isMd = useBreakpoint('md');
 
   const loading = tourLoading || statsLoading;
 
@@ -67,39 +59,46 @@ const VenueBarChart = () => {
     );
   }
 
+  const isMobile = !isMd;
+
   return (
-    <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
-      <h3 className="text-lg md:text-xl font-bold text-gray-800 dark:text-gray-100 mb-4">Matches by Venue</h3>
-      <ResponsiveContainer width="100%" height={isMobile ? Math.max(300, chartData.length * 50) : 300}>
+    <div className="bg-white dark:bg-gray-800 p-4 sm:p-6 rounded-lg shadow-md">
+      <h3 className="text-base sm:text-lg md:text-xl font-bold text-gray-800 dark:text-gray-100 mb-4">Matches by Venue</h3>
+      <ResponsiveContainer width="100%" height={isMobile ? Math.max(300, chartData.length * 40) : 300}>
         <BarChart
           data={chartData}
           layout={isMobile ? 'vertical' : 'horizontal'}
           margin={{
             top: 20,
-            right: 30,
-            left: 20,
-            bottom: 5,
+            right: isMobile ? 20 : 30,
+            left: isMobile ? 80 : 20,
+            bottom: isMobile ? 5 : 50,
           }}
         >
           <CartesianGrid strokeDasharray="3 3" stroke="var(--color-gray-300)" />
           {isMobile ? (
-            <XAxis type="number" dataKey="matchesHosted" stroke="var(--color-gray-600)" />
+            <XAxis type="number" dataKey="matchesHosted" stroke="var(--color-gray-600)" tick={{ fontSize: 10 }} />
           ) : (
-            <XAxis type="category" dataKey="venueName" stroke="var(--color-gray-600)" interval={0} angle={-30} textAnchor="end" height={60} />
+            <XAxis type="category" dataKey="venueName" stroke="var(--color-gray-600)" interval={0} angle={-40} textAnchor="end" height={60} tick={{ fontSize: 12 }} />
           )}
           {isMobile ? (
-            <YAxis type="category" dataKey="venueName" stroke="var(--color-gray-600)" width={100} />
+            <YAxis type="category" dataKey="venueName" stroke="var(--color-gray-600)" width={100} tick={{ fontSize: 10 }} />
           ) : (
-            <YAxis type="number" dataKey="matchesHosted" stroke="var(--color-gray-600)" />
+            <YAxis type="number" dataKey="matchesHosted" stroke="var(--color-gray-600)" tick={{ fontSize: 12 }} />
           )}
           <Tooltip
             cursor={{ fill: 'rgba(0,0,0,0.1)' }}
-            contentStyle={{ backgroundColor: 'var(--color-gray-700)', border: 'none', borderRadius: '5px' }}
+            contentStyle={{ 
+              backgroundColor: 'var(--color-gray-700)', 
+              border: 'none', 
+              borderRadius: '5px',
+              fontSize: isMobile ? '0.75rem' : '0.875rem'
+            }}
             labelStyle={{ color: 'var(--color-secondary-white)' }}
             itemStyle={{ color: 'var(--color-secondary-white)' }}
           />
-          <Legend />
-          <Bar dataKey="matchesHosted" name="Matches Hosted">
+          <Legend wrapperStyle={{ fontSize: isMobile ? '0.75rem' : '0.875rem' }} />
+          <Bar dataKey="matchesHosted" name="Matches Hosted" isAnimationActive={true} animationDuration={1500} animationEasing="ease-in-out">
             {chartData.map((entry, index) => (
               <Bar key={`bar-${entry.venueId}`} fill={brandColors[index % brandColors.length]} />
             ))}

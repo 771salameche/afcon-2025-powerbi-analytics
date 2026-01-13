@@ -13,19 +13,22 @@ import {
 import { useTournament } from '../../contexts/TournamentContext';
 import { useStatistics } from '../../contexts/StatisticsContext';
 import { useFilters } from '../../contexts/FilterContext';
+import useBreakpoint from '../../hooks/useBreakpoint';
 
 const CustomTooltip = ({ active, payload }) => {
+  const isMd = useBreakpoint('md');
+
   if (active && payload && payload.length) {
     const data = payload[0].payload;
     return (
-      <div className="bg-white dark:bg-gray-700 p-3 border border-gray-300 dark:border-gray-600 rounded-lg shadow-md text-gray-800 dark:text-gray-200">
-        <p className="font-bold text-base md:text-lg">{data.teamName}</p>
-        <p className="text-sm md:text-base">Goals For: {data.goalsFor}</p>
-        <p className="text-sm md:text-base">Goals Against: {data.goalsAgainst}</p>
-        <p className="text-sm md:text-base">Wins: {data.wins}</p>
-        <p className="text-sm md:text-base">Losses: {data.losses}</p>
-        <p className="text-sm md:text-base">Draws: {data.draws}</p>
-        <p className="text-sm md:text-base">Points: {data.points}</p>
+      <div className="bg-white dark:bg-gray-700 p-3 border border-gray-300 dark:border-gray-600 rounded-lg shadow-md text-gray-800 dark:text-gray-200" style={{ fontSize: isMd ? '0.875rem' : '0.75rem' }}>
+        <p className="font-bold">{data.teamName}</p>
+        <p>Goals For: {data.goalsFor}</p>
+        <p>Goals Against: {data.goalsAgainst}</p>
+        <p>Wins: {data.wins}</p>
+        <p>Losses: {data.losses}</p>
+        <p>Draws: {data.draws}</p>
+        <p>Points: {data.points}</p>
       </div>
     );
   }
@@ -36,6 +39,7 @@ const TeamComparisonChart = () => {
   const { teams, loading: tourLoading } = useTournament();
   const { calculateTeamStats, totalGoals, completedMatches, loading: statsLoading } = useStatistics();
   const { selectedTeams } = useFilters();
+  const isMd = useBreakpoint('md');
 
   const loading = tourLoading || statsLoading;
 
@@ -84,8 +88,8 @@ const TeamComparisonChart = () => {
   }
 
   return (
-    <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
-      <h3 className="text-lg md:text-xl font-bold text-gray-800 dark:text-gray-100 mb-4">Team Performance Comparison (Goals For vs. Goals Against)</h3>
+    <div className="bg-white dark:bg-gray-800 p-4 sm:p-6 rounded-lg shadow-md">
+      <h3 className="text-base sm:text-lg md:text-xl font-bold text-gray-800 dark:text-gray-100 mb-4">Team Performance Comparison</h3>
       <ResponsiveContainer width="100%" height={400}>
         <ScatterChart
           margin={{
@@ -96,14 +100,14 @@ const TeamComparisonChart = () => {
           }}
         >
           <CartesianGrid strokeDasharray="3 3" stroke="var(--color-gray-300)" />
-          <XAxis type="number" dataKey="goalsFor" name="Goals For" stroke="var(--color-gray-600)" />
-          <YAxis type="number" dataKey="goalsAgainst" name="Goals Against" stroke="var(--color-gray-600)" />
+          <XAxis type="number" dataKey="goalsFor" name="Goals For" stroke="var(--color-gray-600)" tick={{ fontSize: isMd ? 12 : 10 }} />
+          <YAxis type="number" dataKey="goalsAgainst" name="Goals Against" stroke="var(--color-gray-600)" tick={{ fontSize: isMd ? 12 : 10 }} />
           <Tooltip cursor={{ strokeDasharray: '3 3' }} content={<CustomTooltip />} />
-          <Legend />
+          <Legend wrapperStyle={{ fontSize: isMd ? '0.875rem' : '0.75rem' }} />
 
           {/* Quadrants */}
-          {avgGoalsFor > 0 && <ReferenceLine x={avgGoalsFor} stroke="var(--color-primary-teal)" strokeDasharray="3 3" label={`Avg GF: ${avgGoalsFor.toFixed(1)}`} />}
-          {avgGoalsAgainst > 0 && <ReferenceLine y={avgGoalsAgainst} stroke="var(--color-primary-teal)" strokeDasharray="3 3" label={{ value: `Avg GA: ${avgGoalsAgainst.toFixed(1)}`, position: 'insideTopLeft' }} />}
+          {avgGoalsFor > 0 && <ReferenceLine x={avgGoalsFor} stroke="var(--color-primary-teal)" strokeDasharray="3 3" label={{ value: `Avg GF: ${avgGoalsFor.toFixed(1)}`, fontSize: isMd ? 12 : 10, position: 'insideBottomRight' }} />}
+          {avgGoalsAgainst > 0 && <ReferenceLine y={avgGoalsAgainst} stroke="var(--color-primary-teal)" strokeDasharray="3 3" label={{ value: `Avg GA: ${avgGoalsAgainst.toFixed(1)}`, fontSize: isMd ? 12 : 10, position: 'insideTopLeft' }} />}
 
           <Scatter name="Teams" data={chartData} fill="var(--color-primary-teal)">
             {chartData.map((entry, index) => (

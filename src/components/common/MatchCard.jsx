@@ -29,32 +29,32 @@ const MatchCard = ({ fixture, homeTeam, awayTeam }) => {
 
   return (
     <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-4 flex flex-col hover:shadow-lg transition-shadow duration-300 ease-in-out">
-      <div className="flex justify-between items-center text-sm md:text-base text-gray-500 dark:text-gray-400 mb-2 font-body">
+      <div className="flex justify-between items-center text-xs xs:text-sm md:text-base text-gray-500 dark:text-gray-400 mb-2 font-body">
         <span>{stage_name}</span>
         <span>{matchDate} - {matchTime}</span>
       </div>
 
-      <div className="flex items-center justify-between mb-4">
+      <div className="flex xs:flex-col items-center justify-between mb-4">
         {/* Home Team */}
-        <div className="flex flex-col items-center flex-1 pr-2">
-          <TeamLogo teamName={homeTeam.team_name} size="lg" />
-          <p className={`font-semibold text-gray-800 dark:text-gray-200 mt-2 text-sm md:text-base text-center font-body ${isHomeWinner ? 'text-primary-maroon' : ''}`}>
+        <div className="flex flex-col items-center flex-1 pr-2 xs:pr-0 xs:mb-4">
+          <TeamLogo teamName={homeTeam.team_name} size="md" />
+          <p className={`font-semibold text-gray-800 dark:text-gray-200 mt-2 text-sm text-center font-body ${isHomeWinner ? 'text-primary-maroon' : ''}`}>
             {homeTeam.team_name}
           </p>
         </div>
 
         {/* Score */}
-        <div className="flex flex-col items-center">
-          <p className={`text-2xl md:text-3xl font-bold text-primary-maroon ${isDraw ? 'text-gray-600 dark:text-gray-300' : ''}`}>
+        <div className="flex flex-col items-center xs:my-2">
+          <p className={`text-xl md:text-3xl font-bold text-primary-maroon ${isDraw ? 'text-gray-600 dark:text-gray-300' : ''}`}>
             {status === 'Match Finished' ? `${home_team_score} - ${away_team_score}` : 'vs'}
           </p>
           <span className="text-xs text-gray-500 dark:text-gray-400 font-body">{status}</span>
         </div>
 
         {/* Away Team */}
-        <div className="flex flex-col items-center flex-1 pl-2">
-          <TeamLogo teamName={awayTeam.team_name} size="lg" />
-          <p className={`font-semibold text-gray-800 dark:text-gray-200 mt-2 text-sm md:text-base text-center font-body ${isAwayWinner ? 'text-primary-maroon' : ''}`}>
+        <div className="flex flex-col items-center flex-1 pl-2 xs:pl-0 xs:mt-4">
+          <TeamLogo teamName={awayTeam.team_name} size="md" />
+          <p className={`font-semibold text-gray-800 dark:text-gray-200 mt-2 text-sm text-center font-body ${isAwayWinner ? 'text-primary-maroon' : ''}`}>
             {awayTeam.team_name}
           </p>
         </div>

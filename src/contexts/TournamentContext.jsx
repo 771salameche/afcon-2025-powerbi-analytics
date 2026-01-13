@@ -88,19 +88,6 @@ export const TournamentProvider = ({ children }) => {
       setStages(cleanedStages);
       setTournamentSummary(cleanedSummary);
 
-      console.log('=== DATA LOADING DEBUG (Direct Imports) ===');
-      console.log('Teams loaded:', cleanedTeams?.length || 0);
-      console.log('Fixtures loaded:', cleanedFixtures?.length || 0);
-      console.log('Players loaded:', cleanedPlayers?.length || 0);
-      console.log('Venues loaded:', cleanedVenues?.length || 0);
-      console.log('Stages loaded:', cleanedStages?.length || 0);
-      console.log('Summary loaded:', cleanedSummary ? 1 : 0);
-      console.log('==========================================');
-
-      console.log('Sample team:', cleanedTeams[0]);
-      console.log('Sample fixture:', cleanedFixtures[0]);
-      console.log('Tournament summary:', cleanedSummary);
-
       setLoading(false);
       setError(null);
       setLoadingMessage("Data loaded successfully from direct imports!");

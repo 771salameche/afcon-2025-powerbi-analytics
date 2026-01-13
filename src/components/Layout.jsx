@@ -38,10 +38,10 @@ const Layout = () => {
           <AnimatePresence mode="wait">
             <motion.div
               key={location.pathname} // Unique key for each route
-              initial={{ opacity: 0, x: 20 }} // Initial state (fade in from right)
-              animate={{ opacity: 1, x: 0 }}   // Animate to (fully visible, no slide)
-              exit={{ opacity: 0, x: -20 }}   // Exit state (fade out to left)
-              transition={{ duration: 0.2 }}   // Animation duration
+              initial={{ opacity: 0, y: 20 }} // Initial state (fade in from bottom)
+              animate={{ opacity: 1, y: 0 }}   // Animate to (fully visible, no slide)
+              exit={{ opacity: 0, y: -20 }}   // Exit state (fade out to top)
+              transition={{ duration: 0.3, ease: 'easeInOut' }}   // Animation duration
               className="w-full h-full" // Ensure div takes full space
             >
               <Outlet />

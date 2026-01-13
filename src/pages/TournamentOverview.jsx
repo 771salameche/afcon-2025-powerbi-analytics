@@ -19,9 +19,10 @@ import TableSkeleton from '../components/skeletons/TableSkeleton';
 import ChartSkeleton from '../components/skeletons/ChartSkeleton';
 
 const TournamentOverview = () => {
-  const { loading, error, stages } = useTournament();
+  const { loading: tournamentLoading, error, stages } = useTournament();
   const { selectedStage } = useFilters();
   const {
+    loading: statsLoading,
     totalMatches,
     completedMatches,
     totalGoals,
@@ -32,6 +33,8 @@ const TournamentOverview = () => {
     tournamentProgress,
     groupStandings
   } = useStatistics();
+
+  const loading = tournamentLoading || statsLoading;
 
   const currentStageName = useMemo(() => {
     if (selectedStage) {

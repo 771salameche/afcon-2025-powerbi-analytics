@@ -16,6 +16,7 @@ const teamLogoMap = {
   "Mali": "mali_mali-national-team.football-logos.cc.svg",
   "Morocco": "morocco_morocco-national-team.football-logos.cc.svg",
   "Mozambique": "mozambique_mozambique-national-team.football-logos.cc.svg",
+  "Nigeria": "nigeria_nigeria-national-team.football-logos.cc.svg", // Added Nigeria
   "Senegal": "senegal_senegal-national-team.football-logos.cc.svg",
   "South Africa": "south-africa_south-africa-national-team.football-logos.cc.svg",
   "Sudan": "sudan_sudan-national-team.football-logos.cc.svg",
@@ -50,13 +51,13 @@ const TeamLogo = ({ teamName, size = 'md' }) => {
   const getSizeClasses = () => {
     switch (size) {
       case 'sm':
-        return 'w-6 h-6';
+        return 'w-6 h-6'; // 24x24px
       case 'md':
-        return 'w-8 h-8';
+        return 'w-8 h-8'; // 32x32px
       case 'lg':
-        return 'w-10 h-10';
+        return 'w-12 h-12'; // 48x48px
       case 'xl':
-        return 'w-12 h-12';
+        return 'w-16 h-16'; // 64x64px
       default:
         return 'w-8 h-8';
     }

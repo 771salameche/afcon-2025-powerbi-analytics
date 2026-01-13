@@ -1,6 +1,7 @@
 import React, { useState, useMemo } from 'react';
 import { useTournament } from '../../contexts/TournamentContext';
 import { useFilters } from '../../contexts/FilterContext';
+import TeamLogo from '../common/TeamLogo'; // Import TeamLogo
 
 const TeamSelector = () => {
   const { teams } = useTournament();
@@ -52,7 +53,8 @@ const TeamSelector = () => {
                                     onChange={() => handleTeamToggle(team.team_id)}
                                     className="mr-3 form-checkbox text-primary-maroon focus:ring-primary-maroon"
                                 />
-                                <span>{team.team_name}</span>
+                                <TeamLogo teamName={team.team_name} size="sm" /> {/* Add TeamLogo */}
+                                <span className="ml-3">{team.team_name}</span>
                             </li>
                         ))}
                     </ul>

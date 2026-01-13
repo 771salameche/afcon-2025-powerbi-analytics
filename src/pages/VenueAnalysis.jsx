@@ -7,6 +7,7 @@ import BrandedKPICard from '../components/common/BrandedKPICard'; // Use Branded
 import VenueFilter from '../components/filters/VenueFilter';
 import VenueBarChart from '../components/charts/VenueBarChart'; // Import VenueBarChart
 import HeroSection from '../components/layout/HeroSection'; // Import HeroSection
+import { PatternBackground, getRandomPattern } from '../utils/patternHelpers.jsx'; // Import PatternBackground and getRandomPattern
 // import ImageWithFallback from '../components/common/ImageWithFallback'; // Consider a generic image component
 
 const VenueAnalysis = () => {
@@ -91,10 +92,10 @@ const VenueAnalysis = () => {
             />
           </div>
 
-          {/* Morocco Map with Markers - Placeholder */}
-          <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md h-96 flex items-center justify-center">
+          {/* Morocco Map with Markers */}
+          <PatternBackground pattern={getRandomPattern()} opacity={0.15} className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md h-96 flex items-center justify-center">
             <h2 className="text-xl md:text-2xl font-bold text-gray-500 dark:text-gray-400 font-body mb-4">Morocco Map with Venue Markers - Placeholder</h2>
-          </div>
+          </PatternBackground>
 
           {/* Charts - Placeholders */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">

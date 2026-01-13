@@ -19,6 +19,7 @@ const StandingsTable = ({ standings }) => {
             <table className="min-w-full divide-y divide-gray-200 dark:divide-gray-700">
               <thead className="bg-gray-50 dark:bg-gray-700">
                 <tr>
+                  <th scope="col" className="px-3 py-3 text-left text-xs md:text-sm font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider"></th> {/* New Logo Column Header */}
                   <th scope="col" className="px-3 py-3 text-left text-xs md:text-sm font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">Pos</th>
                   <th scope="col" className="px-6 py-3 text-left text-xs md:text-sm font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">Team</th>
                   <th scope="col" className="px-3 py-3 text-center text-xs md:text-sm font-medium text-gray-500 dark:text-gray-300 uppercase tracking-wider">P</th>
@@ -41,9 +42,11 @@ const StandingsTable = ({ standings }) => {
                         : 'hover:bg-gray-50 dark:hover:bg-gray-700'
                     }`}
                   >
+                    <td className="px-3 py-4 whitespace-nowrap text-xs md:text-sm font-medium text-gray-900 dark:text-gray-100">
+                      <TeamLogo teamName={team.team_name} size="sm" /> {/* TeamLogo in new column */}
+                    </td>
                     <td className="px-3 py-4 whitespace-nowrap text-xs md:text-sm font-medium text-gray-900 dark:text-gray-100">{index + 1}</td>
                     <td className="px-6 py-4 whitespace-nowrap text-sm md:text-base font-medium text-gray-900 dark:text-gray-100 flex items-center">
-                      <TeamLogo teamName={team.team_name} size="sm" /> {/* Use TeamLogo */}
                       {team.team_name}
                     </td>
                     <td className="px-3 py-4 whitespace-nowrap text-xs md:text-sm text-gray-700 dark:text-gray-300 text-center">{team.played}</td>

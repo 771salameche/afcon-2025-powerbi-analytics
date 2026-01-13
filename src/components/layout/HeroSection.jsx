@@ -1,33 +1,28 @@
 import React from 'react';
+import { getPatternStyle } from '../../utils/patternHelpers.jsx'; // Import getPatternStyle
 
 const HeroSection = ({ title, subtitle, pattern = 'pattern-03.png', showMascot = true }) => {
   return (
     <div className="relative overflow-hidden bg-primary-maroon text-white py-12 md:py-16 lg:py-20 min-h-[250px] flex items-center">
       {/* Pattern Overlay */}
       <div
-        className="absolute inset-0 bg-repeat opacity-20"
-        style={{ backgroundImage: `url(/logos/${pattern})` }}
+        className="absolute inset-0 rounded-lg" // Remove bg-repeat and bg-cover
+        style={getPatternStyle(pattern, 0.2)}
       ></div>
 
       {/* Mascot SVG (positioned bottom-right) */}
       {showMascot && (
         <img
           src="/logos/mascot.svg"
-          alt="Mascot"
+          alt="AFCON Mascot"
           className="absolute bottom-0 right-0 h-48 md:h-64 lg:h-80 w-auto opacity-30 object-contain z-0 transform translate-x-1/4 translate-y-1/4 md:translate-x-1/5 md:translate-y-1/5"
         />
       )}
 
-      {/* Trophy and Ball Icons (positioned left) - Placeholders */}
+      {/* Trophy and Ball Icons (positioned left) */}
       <div className="absolute top-1/2 left-0 transform -translate-y-1/2 -translate-x-1/3 md:-translate-x-1/4 flex flex-col space-y-4 z-0 opacity-40">
-        <div className="w-16 h-16 md:w-20 md:h-20 bg-secondary-gold rounded-full flex items-center justify-center shadow-lg">
-          {/* Placeholder for Trophy SVG */}
-          <span className="text-white text-3xl">🏆</span>
-        </div>
-        <div className="w-12 h-12 md:w-16 md:h-16 bg-secondary-teal rounded-full flex items-center justify-center shadow-lg">
-          {/* Placeholder for Ball SVG */}
-          <span className="text-white text-2xl">⚽</span>
-        </div>
+        <img src="/logos/coupe.svg" alt="Trophy" className="w-16 h-16 md:w-20 md:h-20 object-contain shadow-lg" />
+        <img src="/logos/png-ball.png" alt="Football" className="w-12 h-12 md:w-16 md:h-16 object-contain shadow-lg" />
       </div>
 
 
@@ -37,7 +32,7 @@ const HeroSection = ({ title, subtitle, pattern = 'pattern-03.png', showMascot =
           {title}
         </h1>
         {subtitle && (
-          <p className="text-lg md:text-xl text-primary-teal mt-2 md:mt-4">
+          <p className="text-lg md:text-xl text-primary-teal mt-2 md:mt-4 font-body">
             {subtitle}
           </p>
         )}

@@ -1,9 +1,10 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import StageFilter from './filters/StageFilter';
 import TeamSelector from './filters/TeamSelector';
 import DateRangeFilter from './filters/DateRangeFilter';
-import VenueFilter from './filters/VenueFilter'; // Import VenueFilter
+import VenueFilter from './filters/VenueFilter';
 
 const Sidebar = ({ isOpen, toggleSidebar }) => {
   return (
@@ -30,11 +31,16 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
             <StageFilter />
             <TeamSelector />
             <DateRangeFilter />
-            <VenueFilter /> {/* Add VenueFilter here */}
+            <VenueFilter />
         </div>
       </aside>
     </>
   );
+};
+
+Sidebar.propTypes = {
+  isOpen: PropTypes.bool.isRequired,
+  toggleSidebar: PropTypes.func.isRequired,
 };
 
 export default Sidebar;

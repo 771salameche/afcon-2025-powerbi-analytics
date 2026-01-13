@@ -1,4 +1,5 @@
-import React, { useMemo } from 'react';
+import React, { useMemo, useRef } from 'react';
+import PropTypes from 'prop-types';
 import {
   BarChart,
   Bar,
@@ -12,6 +13,8 @@ import {
 import { useTournament } from '../../contexts/TournamentContext';
 import { useStatistics } from '../../contexts/StatisticsContext';
 import useBreakpoint from '../../hooks/useBreakpoint';
+import Button from '../common/Button'; // Import the Button component
+import { exportChartAsPng } from '../../utils/chartExportHelpers'; // Assuming this utility will be created
 
 // Function to generate distinct colors using brand palette
 const getBrandColors = () => {
@@ -28,6 +31,7 @@ const VenueBarChart = () => {
   const { venues, loading: tourLoading } = useTournament();
   const { filteredFixtures, loading: statsLoading } = useStatistics();
   const isMd = useBreakpoint('md');
+  const chartRef = useRef(null); // Create a ref for the chart container
 
   const loading = tourLoading || statsLoading;
 
@@ -50,6 +54,12 @@ const VenueBarChart = () => {
 
   const brandColors = useMemo(() => getBrandColors(), []);
 
+  const handleExport = () => {
+    if (chartRef.current) {
+      exportChartAsPng(chartRef.current, 'venue-bar-chart.png');
+    }
+  };
+
   if (loading) return <div className="flex items-center justify-center h-full text-gray-500 dark:text-gray-400"><p className="text-sm md:text-base">Loading venue chart data...</p></div>;
   if (chartData.length === 0) {
     return (
@@ -62,8 +72,13 @@ const VenueBarChart = () => {
   const isMobile = !isMd;
 
   return (
-    <div className="bg-white dark:bg-gray-800 p-4 sm:p-6 rounded-lg shadow-md">
-      <h3 className="text-base sm:text-lg md:text-xl font-bold text-gray-800 dark:text-gray-100 mb-4">Matches by Venue</h3>
+    <div ref={chartRef} className="bg-white dark:bg-gray-800 p-4 sm:p-6 rounded-lg shadow-md">
+      <div className="flex justify-between items-center mb-4">
+        <h3 className="text-base sm:text-lg md:text-xl font-bold text-gray-800 dark:text-gray-100">Matches by Venue</h3>
+        <Button onClick={handleExport} className="text-sm">
+          Export as PNG
+        </Button>
+      </div>
       <ResponsiveContainer width="100%" height={isMobile ? Math.max(300, chartData.length * 40) : 300}>
         <BarChart
           data={chartData}
@@ -107,6 +122,10 @@ const VenueBarChart = () => {
       </ResponsiveContainer>
     </div>
   );
+};
+
+VenueBarChart.propTypes = {
+  // No specific props needed for this component, as it fetches data from contexts
 };
 
 export default VenueBarChart;

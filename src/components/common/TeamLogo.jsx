@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import PropTypes from 'prop-types';
 import { motion } from 'framer-motion';
 
 const teamLogoMap = {
@@ -17,15 +18,15 @@ const teamLogoMap = {
   "Mali": "mali_mali-national-team.football-logos.cc.svg",
   "Morocco": "morocco_morocco-national-team.football-logos.cc.svg",
   "Mozambique": "mozambique_mozambique-national-team.football-logos.cc.svg",
-  "Nigeria": "nigeria_nigeria-national-team.football-logos.cc.svg", // Added Nigeria
+  "Nigeria": "nigeria_nigeria-national-team.football-logos.cc.svg",
   "Senegal": "senegal_senegal-national-team.football-logos.cc.svg",
   "South Africa": "south-africa_south-africa-national-team.football-logos.cc.svg",
   "Sudan": "sudan_sudan-national-team.football-logos.cc.svg",
-  "Tanzania": "Tanzania_FF_(logo).png", // Note: This is a PNG and has a different naming style
+  "Tanzania": "Tanzania_FF_(logo).png",
   "Tunisia": "tunisia_tunisia-national-team.football-logos.cc.svg",
   "Uganda": "uganda_uganda-national-team.football-logos.cc.svg",
   "Zambia": "zambia_zambia-national-team.football-logos.cc.svg",
-  "Zimbabwe": "zifa-full-crest.png", // Note: This is a PNG and has a different naming style
+  "Zimbabwe": "zifa-full-crest.png",
 };
 
 const TeamLogo = ({ teamName, size = 'md' }) => {
@@ -33,20 +34,19 @@ const TeamLogo = ({ teamName, size = 'md' }) => {
   const [error, setError] = useState(false);
 
   useEffect(() => {
-    setError(false); // Reset error on teamName change
+    setError(false);
     const fileName = teamLogoMap[teamName];
     if (fileName) {
       setImgSrc(`/logos/${fileName}`);
     } else {
-      // Fallback to generic slug if not in map
       const genericSlug = teamName.toLowerCase().replace(/\s/g, '-');
-      setImgSrc(`/logos/teams/${genericSlug}.svg`); // Assuming .svg for generic fallback
+      setImgSrc(`/logos/teams/${genericSlug}.svg`);
     }
   }, [teamName]);
 
   const handleImageError = () => {
     setError(true);
-    setImgSrc(''); // Clear the src to prevent further error attempts
+    setImgSrc('');
   };
 
   const getSizeClasses = () => {
@@ -67,7 +67,6 @@ const TeamLogo = ({ teamName, size = 'md' }) => {
   };
 
   if (error) {
-    // Fallback: Display initials or a generic placeholder
     const initials = teamName.split(' ').map(n => n[0]).join('').toUpperCase().substring(0, 2);
     return (
       <div className={`flex items-center justify-center bg-gray-300 text-gray-700 rounded-full ${getSizeClasses()} flex-shrink-0`}>
@@ -85,6 +84,15 @@ const TeamLogo = ({ teamName, size = 'md' }) => {
       whileHover={{ scale: 1.05 }}
     />
   );
+};
+
+TeamLogo.propTypes = {
+  teamName: PropTypes.string.isRequired,
+  size: PropTypes.oneOf(['sm', 'md', 'lg', 'xl', 'xxl']),
+};
+
+TeamLogo.defaultProps = {
+  size: 'md',
 };
 
 export default TeamLogo;

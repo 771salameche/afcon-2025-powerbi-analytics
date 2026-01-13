@@ -1,0 +1,69 @@
+@media print {
+  /* Hide unnecessary elements for print */
+  header,
+  aside, /* Sidebar */
+  .filter-section,
+  .export-buttons,
+  footer {
+    display: none !important;
+  }
+
+  /* Make main content take full width */
+  main {
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    background-color: #fff !important; /* Ensure white background for print */
+    color: #000 !important; /* Ensure black text for print */
+  }
+
+  /* Adjust fonts for readability on print */
+  body, p, span, div {
+    font-family: 'serif' !important; /* Use a common serif font for print */
+    font-size: 12pt !important;
+    line-height: 1.5 !important;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'serif' !important; /* Use a common serif font for print */
+    color: #000 !important;
+  }
+
+  /* Ensure charts and tables are fully visible */
+  .recharts-responsive-container {
+    width: 100% !important;
+    height: auto !important; /* Allow height to adjust */
+  }
+
+  table {
+    width: 100% !important;
+    border-collapse: collapse !important;
+  }
+
+  th, td {
+    border: 1px solid #ccc !important;
+    padding: 8px !important;
+  }
+
+  /* Break long content if necessary */
+  img, svg, video {
+    max-width: 100% !important;
+    height: auto !important;
+    page-break-inside: avoid;
+  }
+
+  a {
+    text-decoration: none !important; /* Remove underlines for print */
+    color: #000 !important;
+  }
+
+  /* Force display of elements that might be hidden by default but needed for print */
+  .print-only {
+    display: block !important;
+  }
+
+  /* Hide elements that are only for screen */
+  .screen-only {
+    display: none !important;
+  }
+}

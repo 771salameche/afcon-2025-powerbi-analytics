@@ -1,6 +1,12 @@
+/**
+ * @file This file provides the core data layer for the AFCON 2025 dashboard.
+ * It creates a React Context that loads, cleans, and provides all raw tournament data
+ * from static JSON files. This includes teams, fixtures, players, venues, and more.
+ */
+
 import React, { createContext, useContext, useState, useEffect } from 'react';
 
-// Direct imports
+// Direct imports for static data
 import teamsData from '../data/Teams.json';
 import fixturesData from '../data/Fixtures.json';
 import playersData from '../data/Players.json';
@@ -10,15 +16,25 @@ import summaryData from '../data/Tournament_Summary.json';
 
 const TournamentContext = createContext();
 
+/**
+ * Custom hook to access the tournament data context.
+ * This must be used within a child component of the TournamentProvider.
+ * @returns {object} The tournament context value.
+ * @throws {Error} If used outside of a TournamentProvider.
+ */
 export const useTournament = () => {
   const context = useContext(TournamentContext);
   if (!context) {
-    throw new Error('useTournament must be used within TournamentProvider');
+    throw new Error('useTournament must be used within a TournamentProvider');
   }
   return context;
 };
 
-// Helper function to clean escaped quotes from strings
+/**
+ * Helper function to clean escaped quotes from strings.
+ * @param {string} str - The string to clean.
+ * @returns {string} The cleaned string.
+ */
 const cleanString = (str) => {
   if (typeof str === 'string') {
     return str.replace(/^"|"$/g, '').replace(/\\"/g, '"');
@@ -26,7 +42,12 @@ const cleanString = (str) => {
   return str;
 };
 
-// Recursive function to deep clean strings in objects and arrays
+/**
+ * Recursively cleans strings in nested objects and arrays.
+ * This is necessary to handle potential formatting issues in the JSON data.
+ * @param {*} data - The data to clean (can be any type).
+ * @returns {*} The cleaned data.
+ */
 const deepCleanStrings = (data) => {
   if (typeof data === 'string') {
     return cleanString(data);
@@ -46,6 +67,14 @@ const deepCleanStrings = (data) => {
   return data;
 };
 
+/**
+ * Provides the tournament data to its children components via context.
+ * It handles loading, cleaning, and validation of all tournament-related data.
+ *
+ * @param {object} props - The component props.
+ * @param {React.ReactNode} props.children - The child components to render.
+ * @returns {JSX.Element} The provider component.
+ */
 export const TournamentProvider = ({ children }) => {
   const [teams, setTeams] = useState([]);
   const [fixtures, setFixtures] = useState([]);
@@ -63,17 +92,14 @@ export const TournamentProvider = ({ children }) => {
       setError(null);
       setLoadingMessage('Loading data from direct imports...');
 
-      // Apply deep cleaning to all imported data
       const cleanedTeams = deepCleanStrings(teamsData);
       const cleanedFixtures = deepCleanStrings(fixturesData);
       const cleanedPlayers = deepCleanStrings(playersData);
       const cleanedVenues = deepCleanStrings(venuesData);
       const cleanedStages = deepCleanStrings(stagesData);
-      // Extract first element and then deep clean
       const rawSummary = summaryData && Array.isArray(summaryData) && summaryData.length > 0 ? summaryData[0] : {};
       const cleanedSummary = deepCleanStrings(rawSummary);
 
-      // Validate and set data
       if (!cleanedTeams || cleanedTeams.length === 0) throw new Error('Teams data is empty or invalid.');
       if (!cleanedFixtures || cleanedFixtures.length === 0) throw new Error('Fixtures data is empty or invalid.');
       if (!cleanedPlayers || cleanedPlayers.length === 0) throw new Error('Players data is empty or invalid.');
@@ -97,16 +123,31 @@ export const TournamentProvider = ({ children }) => {
       setError(err);
       setLoadingMessage(`Failed to load data from direct imports: ${err.message}. Please check console.`);
     }
-  }, []); // Empty dependency array to run once on mount
+  }, []);
 
+  /**
+   * Retrieves a team by its ID.
+   * @param {number} id - The ID of the team to find.
+   * @returns {object|undefined} The team object or undefined if not found.
+   */
   const getTeamById = (id) => {
     return teams.find((team) => team.team_id === id);
   };
 
+  /**
+   * Retrieves a fixture by its ID.
+   * @param {number} id - The ID of the fixture to find.
+   * @returns {object|undefined} The fixture object or undefined if not found.
+   */
   const getFixtureById = (id) => {
     return fixtures.find((fixture) => fixture.fixture_id === id);
   };
 
+  /**
+   * Retrieves all players for a given team ID.
+   * @param {number} teamId - The ID of the team.
+   * @returns {object[]} An array of player objects.
+   */
   const getPlayersByTeam = (teamId) => {
     return players.filter((player) => player.team_id === teamId);
   };

@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const MatchResultCard = ({ match }) => {
   const {
@@ -8,7 +9,7 @@ const MatchResultCard = ({ match }) => {
     away_team_score,
     date,
     venue_name,
-    stage_name, // Assuming stage_name is passed directly or looked up before
+    stage_name,
   } = match;
 
   const matchDate = new Date(date).toLocaleDateString('en-US', {
@@ -47,6 +48,18 @@ const MatchResultCard = ({ match }) => {
       </div>
     </div>
   );
+};
+
+MatchResultCard.propTypes = {
+  match: PropTypes.shape({
+    home_team_name: PropTypes.string.isRequired,
+    away_team_name: PropTypes.string.isRequired,
+    home_team_score: PropTypes.number.isRequired,
+    away_team_score: PropTypes.number.isRequired,
+    date: PropTypes.string.isRequired,
+    venue_name: PropTypes.string.isRequired,
+    stage_name: PropTypes.string.isRequired,
+  }).isRequired,
 };
 
 export default MatchResultCard;

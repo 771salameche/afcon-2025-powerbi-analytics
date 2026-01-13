@@ -1,15 +1,39 @@
 import React from 'react';
-import { Link, useLocation } from 'react-router-dom'; // Import useLocation
-import { useTheme } from '../contexts/ThemeContext'; // Import useTheme
+import PropTypes from 'prop-types';
+import { Link, useLocation } from 'react-router-dom';
+import { useTheme } from '../contexts/ThemeContext';
+import { useFilters } from '../contexts/FilterContext';
+import Button from './common/Button';
 
 const Header = ({ toggleSidebar }) => {
-  const location = useLocation(); // Get current location
-  const { theme, toggleTheme } = useTheme(); // Use theme context
+  const location = useLocation();
+  const { theme, toggleTheme } = useTheme();
+  const { selectedTeams, dateRange, selectedStage, selectedVenue, searchQuery } = useFilters();
 
   const getLinkClass = (path) => {
     return `block p-2 hover:bg-gray-700 rounded transition-colors duration-200 ${
       location.pathname === path ? 'bg-gray-700 text-secondary-gold' : 'text-secondary-white'
     }`;
+  };
+
+  const handleShare = async () => {
+    const params = new URLSearchParams();
+    if (selectedTeams.length > 0) params.append('teams', selectedTeams.join(','));
+    if (dateRange.start) params.append('startDate', dateRange.start);
+    if (dateRange.end) params.append('endDate', dateRange.end);
+    if (selectedStage) params.append('stage', selectedStage);
+    if (selectedVenue) params.append('venue', selectedVenue);
+    if (searchQuery) params.append('search', searchQuery);
+
+    const shareUrl = `${window.location.origin}${location.pathname}?${params.toString()}`;
+
+    try {
+      await navigator.clipboard.writeText(shareUrl);
+      alert('Share link copied to clipboard!');
+    } catch (err) {
+      console.error('Failed to copy share link:', err);
+      alert('Failed to copy link. Please copy manually: ' + shareUrl);
+    }
   };
 
   return (
@@ -38,8 +62,18 @@ const Header = ({ toggleSidebar }) => {
             <Link to="/" className={getLinkClass('/')}>Overview</Link>
             <Link to="/teams" className={getLinkClass('/teams')}>Teams</Link>
             <Link to="/venues" className={getLinkClass('/venues')}>Venues</Link>
-            <Link to="/players" className="text-gray-400 cursor-not-allowed p-2">Players (Coming Soon)</Link> {/* Disabled link */}
+            <Link to="/players" className="text-gray-400 cursor-not-allowed p-2">Players (Coming Soon)</Link>
           </nav>
+
+          {/* Share Button */}
+          <Button onClick={handleShare} className="hidden md:block">
+            Share
+          </Button>
+
+          {/* Print Button */}
+          <Button onClick={() => window.print()} className="hidden md:block">
+            Print
+          </Button>
 
           {/* Theme Toggle Button */}
           <button
@@ -60,6 +94,10 @@ const Header = ({ toggleSidebar }) => {
       </div>
     </header>
   );
+};
+
+Header.propTypes = {
+  toggleSidebar: PropTypes.func.isRequired,
 };
 
 export default Header;

@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import TeamLogo from './TeamLogo';
 
 const MatchCard = ({ fixture, homeTeam, awayTeam }) => {
@@ -66,6 +67,23 @@ const MatchCard = ({ fixture, homeTeam, awayTeam }) => {
       </div>
     </div>
   );
+};
+
+MatchCard.propTypes = {
+  fixture: PropTypes.shape({
+    home_team_score: PropTypes.number,
+    away_team_score: PropTypes.number,
+    date: PropTypes.string.isRequired,
+    venue_name: PropTypes.string.isRequired,
+    stage_name: PropTypes.string.isRequired,
+    status: PropTypes.string.isRequired,
+  }).isRequired,
+  homeTeam: PropTypes.shape({
+    team_name: PropTypes.string.isRequired,
+  }).isRequired,
+  awayTeam: PropTypes.shape({
+    team_name: PropTypes.string.isRequired,
+  }).isRequired,
 };
 
 export default MatchCard;

@@ -1,4 +1,5 @@
-import React, { useMemo } from 'react';
+import React, { useMemo, useRef } from 'react';
+import PropTypes from 'prop-types';
 import {
   LineChart,
   Line,
@@ -10,9 +11,12 @@ import {
   ResponsiveContainer,
 } from 'recharts';
 import useBreakpoint from '../../hooks/useBreakpoint';
+import Button from '../common/Button'; // Import the Button component
+import { exportChartAsPng } from '../../utils/chartExportHelpers'; // Assuming this utility will be created
 
 const GoalsTrendChart = ({ fixtures }) => {
   const isMd = useBreakpoint('md');
+  const chartRef = useRef(null); // Create a ref for the chart container
 
   const chartData = useMemo(() => {
     if (!fixtures || fixtures.length === 0) {
@@ -38,6 +42,12 @@ const GoalsTrendChart = ({ fixtures }) => {
     return data;
   }, [fixtures]);
 
+  const handleExport = () => {
+    if (chartRef.current) {
+      exportChartAsPng(chartRef.current, 'goals-trend-chart.png');
+    }
+  };
+
   if (chartData.length === 0) {
     return (
       <div className="flex items-center justify-center h-full text-gray-500 dark:text-gray-400">
@@ -47,8 +57,13 @@ const GoalsTrendChart = ({ fixtures }) => {
   }
 
   return (
-    <div className="bg-white dark:bg-gray-800 p-4 sm:p-6 rounded-lg shadow-md">
-      <h3 className="text-base sm:text-lg md:text-xl font-bold text-gray-800 dark:text-gray-100 mb-4">Goals Scored Over Tournament</h3>
+    <div ref={chartRef} className="bg-white dark:bg-gray-800 p-4 sm:p-6 rounded-lg shadow-md">
+      <div className="flex justify-between items-center mb-4">
+        <h3 className="text-base sm:text-lg md:text-xl font-bold text-gray-800 dark:text-gray-100">Goals Scored Over Tournament</h3>
+        <Button onClick={handleExport} className="text-sm">
+          Export as PNG
+        </Button>
+      </div>
       <ResponsiveContainer width="100%" height={300}>
         <LineChart
           data={chartData}
@@ -87,6 +102,10 @@ const GoalsTrendChart = ({ fixtures }) => {
       </ResponsiveContainer>
     </div>
   );
+};
+
+GoalsTrendChart.propTypes = {
+  fixtures: PropTypes.array.isRequired,
 };
 
 export default GoalsTrendChart;

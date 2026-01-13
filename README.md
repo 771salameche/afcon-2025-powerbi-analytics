@@ -82,6 +82,14 @@ All tournament data is provided as static JSON files located in the `/public/dat
 *   `Tournament_Stages.json`: Definition of tournament stages (Group Stage, Knockouts, etc.).
 *   `Tournament_Summary.json`: Overall tournament metadata.
 
+## 🔗 Data Model Relationships
+The different data models are interconnected as follows:
+*   **`Fixtures.home_team_id`** → **`Teams.team_id`**
+*   **`Fixtures.away_team_id`** → **`Teams.team_id`**
+*   **`Fixtures.venue_id`** → **`Venues.venue_id`**
+*   **`Fixtures.stage_id`** → **`Tournament_Stages.stage_id`**
+*   **`Players.team_id`** → **`Teams.team_id`**
+
 ## 📁 Project Structure
 ```
 afcon-dashboard/

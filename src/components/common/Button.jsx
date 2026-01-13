@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { motion } from 'framer-motion';
 
 const Button = ({ children, onClick, className = '' }) => {
@@ -12,6 +13,17 @@ const Button = ({ children, onClick, className = '' }) => {
       {children}
     </motion.button>
   );
+};
+
+Button.propTypes = {
+  children: PropTypes.node.isRequired,
+  onClick: PropTypes.func,
+  className: PropTypes.string,
+};
+
+Button.defaultProps = {
+  onClick: () => {},
+  className: '',
 };
 
 export default Button;
